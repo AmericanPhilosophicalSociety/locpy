@@ -24,17 +24,17 @@ class LocAPI(object):
     # Subject Authorities base
     lcsh_base = 'http://id.loc.gov/authorities/subjects/'
     # Children's Subject Headings base
-    lcsj_base = 'http://id.loc.gov/authorities/childrensSubjects'
+    lcsj_base = 'http://id.loc.gov/authorities/childrensSubjects/'
     # Medium of Performance Thesaurus for Music base
-    lcmpt_base = 'http://id.loc.gov/authorities/performanceMediums'
+    lcmpt_base = 'http://id.loc.gov/authorities/performanceMediums/'
     # Demographic Group Terms base
-    lcdgt_base = 'http://id.loc.gov/authorities/demographicTerms'
+    lcdgt_base = 'http://id.loc.gov/authorities/demographicTerms/'
     # Thesaurus for Graphic Materials base
-    tgm_base = 'http://id.loc.gov/vocabulary/graphicMaterials'
+    tgm_base = 'http://id.loc.gov/vocabulary/graphicMaterials/'
     # AFS Ethnographic Thesaurus base
-    afset_base = 'http://id.loc.gov/vocabulary/ethnographicTerms'
+    afset_base = 'http://id.loc.gov/vocabulary/ethnographicTerms/'
     # Genre/Form Terms base
-    lcgft_base = 'http://id.loc.gov/authorities/genreForms'
+    lcgft_base = 'http://id.loc.gov/authorities/genreForms/'
     # Real world entity base (used for queries)
     rwo_base = 'http://id.loc.gov/rwo/agents/'
 
