@@ -104,6 +104,10 @@ class LocAPI(object):
             data = SRUResult(response.json())
             if data.total_results > 0:
                 return data.records
+        
+        response.raise_for_status()
+
+        return []
 
     def retrieve_label(self, label):
         '''Query LoC's label retrieval API to return a URI from
