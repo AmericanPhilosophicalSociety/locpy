@@ -40,12 +40,12 @@ class LocAPI(object):
 
     @classmethod
     def uri_from_id(cls, loc_id):
-        '''Generate a URL for performing initial queries'''
+        """Generate a URL for performing initial queries"""
         return urljoin(cls.uri_base, loc_id)
 
     @classmethod
     def dataset_uri_from_id(cls, loc_id):
-        '''Generate a URI for RDF triples based on LoC dataset'''
+        """Generate a URI for RDF triples based on LoC dataset"""
         if loc_id.startswith('n'):
             return urljoin(cls.lcnaf_base, loc_id)
         elif loc_id.startswith('sh'):
@@ -60,29 +60,29 @@ class LocAPI(object):
             return urljoin(cls.tgm_base, loc_id)
         elif loc_id.startswith('afset'):
             return urljoin(cls.afset_base, loc_id)
-        elif loc_id.starstwith('gf'):
+        elif loc_id.startswith('gf'):
             return urljoin(cls.lcgft_base, loc_id)
         else:
             # Throw error if URL malformed
-            raise ValueError('''
+            raise ValueError("""
             The ID does not conform to supported ID formats.
             Please verify the ID is correct.
-            ''')
+            """)
 
     @classmethod
     def rwo_uri_from_id(cls, loc_id):
-        '''Generate RWO URI for linked data queries'''
+        """Generate RWO URI for linked data queries"""
         return urljoin(cls.rwo_base, loc_id)
 
-    def suggest(self, query, authority: Literal[None, "names", "subjects"] = None):
-        '''Query LoC's suggest service API. Returns a list of
+    def suggest(self, query, authority: Literal[None, 'names', 'subjects'] = None):
+        """Query LoC's suggest service API. Returns a list of
         results, or an empty list for no results or an error.
 
         Querying the older Suggest 1.0 is not implemented.
 
         :param query: Search query (string)
         :param authority: LoC authority to search. Supports names or subjects
-        '''
+        """
 
         # Note dropdown search language from API docs. What do we need to do to implement this?
         if authority:
@@ -95,29 +95,28 @@ class LocAPI(object):
         suggest_param = 'suggest2'
 
         query_url = urljoin(base_url, suggest_param)
+        print(query_url)
         # TODO: incorporate more parameters?
-        params = {
-            "q": query
-        }
+        params = {'q': query}
         response = requests.get(query_url, params=params)
         if response.status_code == requests.codes.ok:
             data = SRUResult(response.json())
             if data.total_results > 0:
                 return data.records
-        
+
         response.raise_for_status()
 
         return []
 
     def retrieve_label(self, label):
-        '''Query LoC's label retrieval API to return a URI from
-        a known label'''
+        """Query LoC's label retrieval API to return a URI from
+        a known label"""
 
         # TODO: Allow authorities to be passed in query
-        base_url = 'https://id.loc.gov/authorities/labels/'
+        base_url = 'https://id.loc.gov/authorities/label/'
         query_url = urljoin(base_url, label)
         response = requests.get(query_url, allow_redirects=False)
-        if response.status_code == requests.codes.ok:
+        if response.ok:
             uri = response.headers['x-uri']
             identifier = uri.split('/')[-1]
             return identifier
@@ -128,10 +127,10 @@ class LocAPI(object):
 
 # Question: Does each dataset need its own representation?
 class LocEntity(object):
-    '''Object to represent single LoC entity
+    """Object to represent single LoC entity
 
     :param loc_id: LoC identifier (string)
-    '''
+    """
 
     def __init__(self, loc_id):
         # probably need to identify canonical ID from LoC dataset
@@ -141,31 +140,29 @@ class LocEntity(object):
 
     @property
     def uriref(self):
-        '''LoC URI reference as instance of :class: `rdflib.URIRef`'''
+        """LoC URI reference as instance of :class: `rdflib.URIRef`"""
         return rdflib.URIRef(self.uri)
 
     @property
     def dataset_uriref(self):
-        '''LoC URI reference that includes LCNAF dataset
-        marker as instance of :class: `rdflib.URIRef`'''
+        """LoC URI reference that includes LCNAF dataset
+        marker as instance of :class: `rdflib.URIRef`"""
         return rdflib.URIRef(self.dataset_uri)
 
     @cached_property
     def rdf(self):
-        '''LoC data for this entity as :class: `rdflib.Graph`'''
+        """LoC data for this entity as :class: `rdflib.Graph`"""
         graph = rdflib.Graph()
         response = requests.get(self.uri, headers={'Accept': 'application/rdf+xml'})
         response.raise_for_status()  # raise HTTPError on bad requests
-        graph.parse(data=response.text, format="xml")
+        graph.parse(data=response.text, format='xml')
 
         return graph
 
     @property
     def authoritative_label(self):
-        '''Authoritative entity label in English'''
-        labels = self.rdf.objects(
-            self.dataset_uriref, MADS_NS.authoritativeLabel
-        )
+        """Authoritative entity label in English"""
+        labels = self.rdf.objects(self.dataset_uriref, MADS_NS.authoritativeLabel)
         # Sometimes label is marked "en", sometimes no label
         for label in labels:
             if label.language == 'en':
@@ -175,25 +172,25 @@ class LocEntity(object):
 
     @property
     def scheme_membership(self):
-        '''LoC scheme that represents this entity as instance of
-        :class: `rdflib.URIRef'''
+        """LoC scheme that represents this entity as instance of
+        :class: `rdflib.URIRef"""
         # TODO: In theory, this can value can be multiple. Find example
         return self.rdf.value(self.dataset_uriref, MADS_NS.isMemberOfMADSScheme)
 
     @property
     def instance_of(self):
-        '''Linked Data authorities that describe this entity as
-        list of instances of :class: `rdflib.URIRef'''
+        """Linked Data authorities that describe this entity as
+        list of instances of :class: `rdflib.URIRef"""
         instances = self.rdf.objects(self.dataset_uriref, RDF.type)
         return [i for i in instances]
 
 
 class NameEntity(LocEntity):
-    '''Object to represent single entity from the
+    """Object to represent single entity from the
     LoC Name Authority File. Inherits :class: `LocEntity`.
 
     :param loc_id: LoC identifier (string)
-    '''
+    """
 
     @property
     def rwo_uri(self):
@@ -201,37 +198,37 @@ class NameEntity(LocEntity):
 
     @property
     def rwo_uriref(self):
-        '''LoC RWO URI reference as instance of
-        :class: `rdflib.URIRef`'''
+        """LoC RWO URI reference as instance of
+        :class: `rdflib.URIRef`"""
         return rdflib.URIRef(self.rwo_uri)
 
     @property
     def birthdate(self):
-        '''MADS birthday as :class: `rdflib.term.Literal`'''
+        """MADS birthday as :class: `rdflib.term.Literal`"""
         return self.rdf.value(self.rwo_uriref, MADS_NS.birthDate)
 
     @property
     def deathdate(self):
-        '''MADS deathdate as :class: `rdflib.term.Literal`'''
+        """MADS deathdate as :class: `rdflib.term.Literal`"""
         return self.rdf.value(self.rwo_uriref, MADS_NS.deathDate)
 
     @property
     def birthyear(self):
-        '''birth year as int'''
+        """birth year as int"""
         if self.birthdate:
             return self.year_from_edtf(str(self.birthdate))
 
     @property
     def deathyear(self):
-        '''death year as int'''
+        """death year as int"""
         if self.deathdate:
             return self.year_from_edtf(str(self.deathdate))
 
     @classmethod
     def year_from_edtf(cls, date):
-        '''Return just the year from EDTF date. Expects a string,
+        """Return just the year from EDTF date. Expects a string,
         returns an integer. Normalizes uncertain years. Supports
-        negative dates. No support for partially unknown years.'''
+        negative dates. No support for partially unknown years."""
         negative = False
         # if the date starts with a dash, flag negative and delete
         if date.startswith('-'):
@@ -249,21 +246,21 @@ class NameEntity(LocEntity):
 
 
 class SubjectEntity(LocEntity):
-    '''Object to represent single entity from the LoC
+    """Object to represent single entity from the LoC
     Subject Headings authority. Inherits :class: `LocEntity`.
 
     :param loc_id: LoC identifier (string)
-    '''
+    """
 
     @property
     def components(self):
-        '''Components for LoC Complex subjects. If subject is
+        """Components for LoC Complex subjects. If subject is
         complex, returns a list of :class: `SubjectEntity`
         and :class: `NameEntity` objects. If subject is simple,
         returns `None`.
 
         Currently does not support temporal elements.
-        '''
+        """
         complex = MADS_NS.ComplexSubject
         if complex in self.instance_of:
             topics = self.rdf.subjects(RDF.type, MADS_NS.Topic)
@@ -288,7 +285,7 @@ class SubjectEntity(LocEntity):
 
 
 class SRUResult(object):
-    '''SRU search result object, for use with :meth: `LocAPI.search`.'''
+    """SRU search result object, for use with :meth: `LocAPI.search`."""
 
     def __init__(self, data):
         self._results = data.get('hits', [])
@@ -298,29 +295,29 @@ class SRUResult(object):
 
     @cached_property
     def records(self):
-        '''List of results as :class: `SRUItem`.'''
+        """List of results as :class: `SRUItem`."""
         return [SRUItem(r) for r in self._results]
 
 
 class SRUItem(object):
-    '''Single item returned by a SRU search, for use with
+    """Single item returned by a SRU search, for use with
     :meth: `LocAPI.search` and :class: `SRUResult`.
-    '''
+    """
 
     def __init__(self, data):
         self._data = data
 
     @property
     def uri(self):
-        '''LoC URI for this result'''
+        """LoC URI for this result"""
         return self._data['uri']
 
     @property
     def id(self):
-        '''LoC ID string for this result'''
+        """LoC ID string for this result"""
         return self._data['token']
 
     @property
     def label(self):
-        '''Authoritative label for this result'''
+        """Authoritative label for this result"""
         return self._data['aLabel']
