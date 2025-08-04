@@ -121,10 +121,7 @@ class LocAPI(object):
         # it returns many results from the resources authority
         query_url = f'{self.uri_base}{authority}/suggest2'
 
-        params = {
-            'q': query,
-            'searchtype': 'keyword'
-        }
+        params = {'q': query, 'searchtype': 'keyword'}
         response = requests.get(query_url, params=params)
         if response.status_code == requests.codes.ok:
             data = SRUResult(response.json())
