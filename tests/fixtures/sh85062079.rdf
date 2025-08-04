@@ -1,0 +1,97 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85062079" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:authoritativeLabel xml:lang="en">Horror in art</madsrdf:authoritativeLabel>
+    <madsrdf:elementList rdf:parseType="Collection">
+      <madsrdf:TopicElement>
+	<madsrdf:elementValue xml:lang="en">Horror in art</madsrdf:elementValue>
+      </madsrdf:TopicElement>
+    </madsrdf:elementList>
+    <bflc:marcKey>150 0$aHorror in art</bflc:marcKey>
+    <madsrdf:classification>
+      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+	<madsrdf:code>N8217.H68</madsrdf:code>
+      </lcc:ClassNumber>
+    </madsrdf:classification>
+    <identifiers:lccn xmlns:identifiers="http://id.loc.gov/vocabulary/identifiers/">sh 85062079</identifiers:lccn>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/subjects/collection_LCSHAuthorizedHeadings"/>
+    <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/subjects/collection_LCSH_General"/>
+    <owl:sameAs rdf:resource="info:lc/authorities/sh85062079"/>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/sh85062079#concept"/>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:Topic rdf:about="http://id.worldcat.org/fast/960375">
+	<bflc:marcKey>150  $aHorror in art</bflc:marcKey>
+	<madsrdf:authoritativeLabel>Horror in art</madsrdf:authoritativeLabel>
+      </madsrdf:Topic>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:Topic rdf:about="https://d-nb.info/gnd/4197062-7">
+	<rdfs:label>Schrecken</rdfs:label>
+	<madsrdf:authoritativeLabel>Schrecken &lt;Motiv&gt;</madsrdf:authoritativeLabel>
+      </madsrdf:Topic>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1986-02-11T00:00:00</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new</ri:recordStatus>
+	<ri:recordContentSource>
+	  <madsrdf:CorporateName rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel>United States, Library of Congress</madsrdf:authoritativeLabel>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</madsrdf:code>
+	  </madsrdf:CorporateName>
+	</ri:recordContentSource>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-12-16T11:17:03</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revised</ri:recordStatus>
+	<ri:recordContentSource>
+	  <madsrdf:CorporateName rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel>United States, Library of Congress</madsrdf:authoritativeLabel>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</madsrdf:code>
+	  </madsrdf:CorporateName>
+	</ri:recordContentSource>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Horror in art</skos:prefLabel>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="http://id.worldcat.org/fast/960375">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel>Horror in art</skos:prefLabel>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="https://d-nb.info/gnd/4197062-7">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel>Schrecken &lt;Motiv&gt;</skos:prefLabel>
+	<rdfs:label>Schrecken</rdfs:label>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:inScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+    <skos:changeNote>
+      <cs:ChangeSet xmlns:cs="http://purl.org/vocab/changeset/schema#">
+	<cs:subjectOfChange rdf:resource="http://id.loc.gov/authorities/subjects/sh85062079"/>
+	<cs:creatorName>United States, Library of CongressDLCdlcUS-dlc</cs:creatorName>
+	<cs:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1986-02-11T00:00:00</cs:createdDate>
+	<cs:changeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new</cs:changeReason>
+      </cs:ChangeSet>
+    </skos:changeNote>
+    <skos:changeNote>
+      <cs:ChangeSet xmlns:cs="http://purl.org/vocab/changeset/schema#">
+	<cs:subjectOfChange rdf:resource="http://id.loc.gov/authorities/subjects/sh85062079"/>
+	<cs:creatorName>United States, Library of CongressDLCdlcUS-dlc</cs:creatorName>
+	<cs:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-12-16T11:17:03</cs:createdDate>
+	<cs:changeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revised</cs:changeReason>
+      </cs:ChangeSet>
+    </skos:changeNote>
+  </madsrdf:Topic>
+</rdf:RDF>

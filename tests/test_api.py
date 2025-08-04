@@ -6,7 +6,7 @@ from unittest.mock import patch, Mock
 import requests
 import rdflib
 
-from locpy.api import LocAPI, SRUItem, LocEntity, NameEntity
+from locpy.api import LocAPI, SRUItem, LocEntity, NameEntity, SubjectEntity
 
 
 FIXTURES_PATH = os.path.join(os.path.dirname(__file__), 'fixtures')
@@ -83,7 +83,7 @@ class TestLocAPI(object):
         mock_headers = {
             'location': 'https://id.loc.gov/authorities/names/n79043402',
             'x-uri': 'http://id.loc.gov/authorities/names/n79043402',
-            'x-preflabel': 'Franklin, Benjamin, 1706-1790'
+            'x-preflabel': 'Franklin, Benjamin, 1706-1790',
         }
 
         mock_response = Mock()
@@ -157,21 +157,21 @@ class TestLocAPI(object):
         mockrequests.codes = requests.codes
         # check that query with no results returns empty lists
         mock_result = {
-            "q": "notanentity*",
-            "count": 0,
-            "pagesize": 10,
-            "start": 1,
-            "sortmethod": "rank",
-            "searchtype": "keyword",
-            "directory": "/authorities/names/",
-            "hits": []
+            'q': 'notanentity*',
+            'count': 0,
+            'pagesize': 10,
+            'start': 1,
+            'sortmethod': 'rank',
+            'searchtype': 'keyword',
+            'directory': '/authorities/names/',
+            'hits': [],
         }
         mockrequests.get.return_value.status_code = requests.codes.ok
         mockrequests.get.return_value.json.return_value = mock_result
         assert loc.search('notanentity', 'names') == []
         mockrequests.get.assert_called_with(
             'http://id.loc.gov/authorities/names/suggest2',
-            params={'q': 'notanentity', 'searchtype': 'keyword'}
+            params={'q': 'notanentity', 'searchtype': 'keyword'},
         )
 
         # test suggest results
@@ -184,7 +184,7 @@ class TestLocAPI(object):
         assert isinstance(results[0], SRUItem)
         mockrequests.get.assert_called_with(
             'http://id.loc.gov/authorities/names/suggest2',
-            params={'q': 'Benjamin Franklin', 'searchtype': 'keyword'}
+            params={'q': 'Benjamin Franklin', 'searchtype': 'keyword'},
         )
 
         # bad status code should return empty list
@@ -243,8 +243,12 @@ class TestLocEntity(object):
         ent = LocEntity(self.test_id)
         assert ent.rdf == mockrdflib.Graph.return_value
         mockrdflib.Graph.assert_called_with()
-        mockrequests.get.assert_called_with(self.test_uri, headers={'Accept': 'application/rdf+xml'})
-        mockrdflib.Graph.return_value.parse.assert_called_with(data=mock_response.text, format='xml')
+        mockrequests.get.assert_called_with(
+            self.test_uri, headers={'Accept': 'application/rdf+xml'}
+        )
+        mockrdflib.Graph.return_value.parse.assert_called_with(
+            data=mock_response.text, format='xml'
+        )
         mockrequests.raise_for_status.assert_called_once
 
     def test_properties(self):
@@ -255,9 +259,10 @@ class TestLocEntity(object):
         test_instances = [
             'http://www.loc.gov/mads/rdf/v1#Medium',
             'http://www.loc.gov/mads/rdf/v1#Authority',
-            'http://www.w3.org/2004/02/skos/core#Concept'
+            'http://www.w3.org/2004/02/skos/core#Concept',
         ]
 
+        # TODO: This logic is used a lot. Reconfigure as wrapper
         # patch fixture in to LocEntity rdf property
         with patch.object(LocEntity, 'rdf', new=test_rdf):
             assert str(ent.authoritative_label) == 'dancer'
@@ -284,7 +289,7 @@ class TestNameEntity(object):
         ent = NameEntity(self.loc_id)
         test_rdf = rdflib.Graph()
         test_rdf.parse(self.rdf_fixture)
-        
+
         # patch fixture in to NameEntity rdf property
         with patch.object(NameEntity, 'rdf', new=test_rdf):
             assert str(ent.birthdate) == '1706-01-17'
@@ -293,4 +298,29 @@ class TestNameEntity(object):
             assert ent.deathyear == 1790
 
 
-# class TestSubjectEntity(object)
+class TestSubjectEntity(object):
+    def test_complex_entity(self):
+        # Complex entities can have components that are either
+        # name entities or subject entities
+        rdf_fixture = os.path.join(FIXTURES_PATH, 'sh2008001841.rdf')
+
+        ent = SubjectEntity('sh2008001841')
+        test_rdf = rdflib.Graph()
+        test_rdf.parse(rdf_fixture)
+
+        with patch.object(SubjectEntity, 'rdf', new=test_rdf):
+            assert len(ent.components) == 4
+            names = [isinstance(c, NameEntity) for c in ent.components]
+            subjects = [isinstance(c, SubjectEntity) for c in ent.components]
+            assert names.count(True) == 1
+            assert subjects.count(True) == 3
+
+    def test_simple_entity(self):
+        # Simple entities should not have components
+        rdf_fixture = os.path.join(FIXTURES_PATH, 'sh85062079.rdf')
+        ent = SubjectEntity('sh85062079')
+        test_rdf = rdflib.Graph()
+        test_rdf.parse(rdf_fixture)
+
+        with patch.object(SubjectEntity, 'rdf', new=test_rdf):
+            assert ent.components is None
