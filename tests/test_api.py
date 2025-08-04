@@ -297,6 +297,16 @@ class TestNameEntity(object):
             assert ent.birthyear == 1706
             assert ent.deathyear == 1790
 
+    def test_year_from_edtf(self):
+        assert NameEntity.year_from_edtf('1980') == 1980
+        assert NameEntity.year_from_edtf('1980-01') == 1980
+        assert NameEntity.year_from_edtf('2001-02-03') == 2001
+        # test negative years
+        assert NameEntity.year_from_edtf('-0468') == -468
+        # test uncertainty markers in EDTF
+        assert NameEntity.year_from_edtf('1847?') == 1847
+        assert NameEntity.year_from_edtf('0213~') == 213
+
 
 class TestSubjectEntity(object):
     def test_complex_entity(self):
