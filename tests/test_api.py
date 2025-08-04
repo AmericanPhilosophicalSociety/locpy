@@ -1,7 +1,7 @@
 import json
 import os
 import pytest
-from unittest.mock import patch
+from unittest.mock import patch, Mock
 
 import requests
 # import rdflib
@@ -76,9 +76,21 @@ class TestLocAPI(object):
         with pytest.raises(ValueError):
             LocAPI.dataset_uri_from_id('TR658.3')
 
-    # need to rewrite this test so it does not call external API
-    def test_retrieve_label(self):
+    @patch('locpy.api.requests')
+    def test_retrieve_label(self, mockrequests):
         loc = LocAPI()
+        # abbreviated successful request
+        mock_headers = {
+            'location': 'https://id.loc.gov/authorities/names/n79043402',
+            'x-uri': 'http://id.loc.gov/authorities/names/n79043402',
+            'x-preflabel': 'Franklin, Benjamin, 1706-1790'
+        }
+
+        mock_response = Mock()
+        mock_response.status_code = 302
+        mock_response.headers = mock_headers
+        mockrequests.get.return_value = mock_response
+
         assert loc.retrieve_label('Franklin, Benjamin, 1706-1790') == 'n79043402'
 
     # features to test for search results:

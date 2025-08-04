@@ -75,8 +75,8 @@ class LocAPI(object):
         return urljoin(cls.rwo_base, loc_id)
 
     def suggest(self, query, authority: Literal[None, 'names', 'subjects'] = None):
-        """Query LoC's suggest service API. Returns a list of
-        results, or an empty list for no results or an error.
+        """Query LoC's suggest service API using left-anchored search. Returns
+        a list of results, or an empty list for no results or an error.
 
         Querying the older Suggest 1.0 is not implemented.
 
@@ -108,6 +108,14 @@ class LocAPI(object):
 
         return []
 
+    def search(self, query):
+        """Query LoC's suggest service API using keyword search. Returns a
+        list of search results, or an empty list for an error.
+
+        :param query: Search query (string)
+        """
+        pass
+
     def retrieve_label(self, label):
         """Query LoC's label retrieval API to return a URI from
         a known label"""
@@ -116,13 +124,14 @@ class LocAPI(object):
         base_url = 'https://id.loc.gov/authorities/label/'
         query_url = urljoin(base_url, label)
         response = requests.get(query_url, allow_redirects=False)
-        if response.ok:
+        # successful query should return a redirect
+        if response.status_code == 302:
             uri = response.headers['x-uri']
             identifier = uri.split('/')[-1]
             return identifier
 
         else:
-            return None
+            response.raise_for_status()
 
 
 # Question: Does each dataset need its own representation?
