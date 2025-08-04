@@ -227,6 +227,9 @@ class NameEntity(LocEntity):
         :class: `rdflib.URIRef`"""
         return rdflib.URIRef(self.rwo_uri)
 
+    # chronological data
+    # some ancient authors use "active" or "fl." instead of life dates
+    # should be implemented in future work package
     @property
     def birthdate(self):
         """MADS birthday as :class: `rdflib.term.Literal`"""
