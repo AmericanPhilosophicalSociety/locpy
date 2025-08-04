@@ -4,9 +4,9 @@ import pytest
 from unittest.mock import patch, Mock
 
 import requests
-# import rdflib
+import rdflib
 
-from locpy.api import LocAPI, SRUItem
+from locpy.api import LocAPI, SRUItem, LocEntity, NameEntity
 
 
 FIXTURES_PATH = os.path.join(os.path.dirname(__file__), 'fixtures')
@@ -207,3 +207,90 @@ class TestLocAPI(object):
             loc.search(term, authority='subjects')
 
         mocksearch.assert_called_with('Benjamin Franklin', authority='subjects')
+
+
+class TestLocEntity(object):
+    # test entity from an unimplemented API
+    test_id = 'mp2013015202'
+    test_uri = 'http://id.loc.gov/authorities/mp2013015202'
+    test_data_uri = 'http://id.loc.gov/authorities/performanceMediums/mp2013015202'
+    rdf_fixture = os.path.join(FIXTURES_PATH, 'mp2013015202.rdf')
+
+    def test_init(self):
+        ent = LocEntity(self.test_id)
+        assert ent.loc_id == self.test_id
+        assert ent.uri == self.test_uri
+        assert ent.dataset_uri == self.test_data_uri
+
+    def test_uriref(self):
+        ent = LocEntity(self.test_id)
+        assert ent.uriref == rdflib.URIRef(self.test_uri)
+
+    def test_dataset_uriref(self):
+        ent = LocEntity(self.test_id)
+        assert ent.dataset_uriref == rdflib.URIRef(self.test_data_uri)
+
+    @patch('locpy.api.requests')
+    @patch('locpy.api.rdflib')
+    def test_rdf(self, mockrdflib, mockrequests):
+        mock_codes = Mock()
+        mock_codes.ok = 200
+        mockrequests.codes = mock_codes
+        mock_response = Mock()
+        mock_response.status_code = mock_codes.ok
+        mock_response.text = 'data'
+        mockrequests.get.return_value = mock_response
+        ent = LocEntity(self.test_id)
+        assert ent.rdf == mockrdflib.Graph.return_value
+        mockrdflib.Graph.assert_called_with()
+        mockrequests.get.assert_called_with(self.test_uri, headers={'Accept': 'application/rdf+xml'})
+        mockrdflib.Graph.return_value.parse.assert_called_with(data=mock_response.text, format='xml')
+        mockrequests.raise_for_status.assert_called_once
+
+    def test_properties(self):
+        ent = LocEntity(self.test_id)
+        test_rdf = rdflib.Graph()
+        test_rdf.parse(self.rdf_fixture)
+        test_scheme = 'http://id.loc.gov/authorities/performanceMediums'
+        test_instances = [
+            'http://www.loc.gov/mads/rdf/v1#Medium',
+            'http://www.loc.gov/mads/rdf/v1#Authority',
+            'http://www.w3.org/2004/02/skos/core#Concept'
+        ]
+
+        # patch fixture in to LocEntity rdf property
+        with patch.object(LocEntity, 'rdf', new=test_rdf):
+            assert str(ent.authoritative_label) == 'dancer'
+            assert str(ent.scheme_membership) == test_scheme
+            # construct plain list of instances
+            instances = [str(i) for i in ent.instance_of]
+            assert set(test_instances) == set(instances)
+
+
+class TestNameEntity(object):
+    loc_id = 'n79043402'
+    test_rwo_uri = 'http://id.loc.gov/rwo/agents/n79043402'
+    rdf_fixture = os.path.join(FIXTURES_PATH, 'n79043402.rdf')
+
+    def test_get_rwo_uri(self):
+        ent = NameEntity(self.loc_id)
+        assert ent.rwo_uri == self.test_rwo_uri
+
+    def test_rwo_uriref(self):
+        ent = NameEntity(self.loc_id)
+        assert ent.rwo_uriref == rdflib.URIRef(self.test_rwo_uri)
+
+    def test_properties(self):
+        ent = NameEntity(self.loc_id)
+        test_rdf = rdflib.Graph()
+        test_rdf.parse(self.rdf_fixture)
+        
+        # patch fixture in to NameEntity rdf property
+        with patch.object(NameEntity, 'rdf', new=test_rdf):
+            assert str(ent.birthdate) == '1706-01-17'
+            assert str(ent.deathdate) == '1790-04-17'
+            assert ent.birthyear == 1706
+            assert ent.deathyear == 1790
+
+
+# class TestSubjectEntity(object)

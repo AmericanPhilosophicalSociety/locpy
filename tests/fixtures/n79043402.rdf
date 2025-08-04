@@ -1,0 +1,763 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n79043402" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:authoritativeLabel>Franklin, Benjamin, 1706-1790</madsrdf:authoritativeLabel>
+    <madsrdf:authoritativeLabel xml:lang="zxx-Hebr">פראנקלין, בנימין, 1790־1706</madsrdf:authoritativeLabel>
+    <bflc:marcKey xml:lang="zxx-Hebr">4001 $aפראנקלין, בנימין,$d1790־1706</bflc:marcKey>
+    <madsrdf:authoritativeLabel xml:lang="zxx-Arab">فرانكلين، بنجامين، 1706-1790</madsrdf:authoritativeLabel>
+    <bflc:marcKey xml:lang="zxx-Arab">4001 $aفرانكلين، بنجامين،$d1706-1790</bflc:marcKey>
+    <madsrdf:authoritativeLabel xml:lang="zxx-Hani">富兰克林, 1706-1790</madsrdf:authoritativeLabel>
+    <bflc:marcKey xml:lang="zxx-Hani">4001 $a富兰克林,$d1706-1790</bflc:marcKey>
+    <madsrdf:authoritativeLabel xml:lang="zxx-Cyrl">Франклин, Бенджамин, 1706-1790</madsrdf:authoritativeLabel>
+    <bflc:marcKey xml:lang="zxx-Cyrl">4001 $aФранклин, Бенджамин,$d1706-1790</bflc:marcKey>
+    <madsrdf:elementList rdf:parseType="Collection">
+      <madsrdf:FullNameElement>
+	<madsrdf:elementValue>Franklin, Benjamin,</madsrdf:elementValue>
+      </madsrdf:FullNameElement>
+      <madsrdf:DateNameElement>
+	<madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+      </madsrdf:DateNameElement>
+    </madsrdf:elementList>
+    <bflc:marcKey>1001 $aFranklin, Benjamin,$d1706-1790</bflc:marcKey>
+    <madsrdf:identifiesRWO>
+      <madsrdf:RWO rdf:about="http://id.loc.gov/rwo/agents/n79043402">
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label>Franklin, Benjamin, 1706-1790</rdfs:label>
+	<madsrdf:birthDate rdf:datatype="http://id.loc.gov/datatypes/edtf/EDTF">1706-01-17</madsrdf:birthDate>
+	<madsrdf:deathDate rdf:datatype="http://id.loc.gov/datatypes/edtf/EDTF">1790-04-17</madsrdf:deathDate>
+	<madsrdf:birthPlace>
+	  <madsrdf:Geographic rdf:about="http://id.loc.gov/rwo/agents/n79045553">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel>Boston (Mass.)</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="zxx-Arab">بوستون (Mass.)</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="zxx-Hebr">בוסטון (Mass.)</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="zxx-Cyrl">Горад Бостан (Mass.)</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="zxx-Grek">Βοστώνη (Mass.)</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="zxx-Hang">보스턴 (Mass.)</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="zxx-Jpan">ボストン (Mass.)</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="zxx-Hani">波士顿 (Mass.)</madsrdf:authoritativeLabel>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">n-us-ma</madsrdf:code>
+	  </madsrdf:Geographic>
+	</madsrdf:birthPlace>
+	<madsrdf:occupation>
+	  <madsrdf:Occupation>
+	    <rdfs:label>Inventor</rdfs:label>
+	  </madsrdf:Occupation>
+	</madsrdf:occupation>
+	<madsrdf:occupation>
+	  <madsrdf:Occupation>
+	    <rdfs:label>Printer</rdfs:label>
+	  </madsrdf:Occupation>
+	</madsrdf:occupation>
+	<madsrdf:occupation>
+	  <madsrdf:Occupation>
+	    <rdfs:label>Publisher</rdfs:label>
+	  </madsrdf:Occupation>
+	</madsrdf:occupation>
+	<madsrdf:occupation>
+	  <madsrdf:Occupation>
+	    <rdfs:label>Diplomat</rdfs:label>
+	  </madsrdf:Occupation>
+	</madsrdf:occupation>
+	<madsrdf:occupation>
+	  <madsrdf:Occupation>
+	    <rdfs:label>Political leader</rdfs:label>
+	  </madsrdf:Occupation>
+	</madsrdf:occupation>
+	<madsrdf:occupation>
+	  <madsrdf:Occupation>
+	    <rdfs:label>Scientist</rdfs:label>
+	  </madsrdf:Occupation>
+	</madsrdf:occupation>
+	<madsrdf:occupation>
+	  <madsrdf:Occupation>
+	    <rdfs:label>Writer</rdfs:label>
+	  </madsrdf:Occupation>
+	</madsrdf:occupation>
+	<madsrdf:associatedLanguage>
+	  <madsrdf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel xml:lang="en">English</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="de">Englisch</madsrdf:authoritativeLabel>
+	    <madsrdf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</madsrdf:code>
+	  </madsrdf:Language>
+	</madsrdf:associatedLanguage>
+	<madsrdf:isIdentifiedByAuthority>
+	  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n79043402">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel>Franklin, Benjamin, 1706-1790</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="zxx-Hebr">פראנקלין, בנימין, 1790־1706</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="zxx-Arab">فرانكلين، بنجامين، 1706-1790</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="zxx-Hani">富兰克林, 1706-1790</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="zxx-Cyrl">Франклин, Бенджамин, 1706-1790</madsrdf:authoritativeLabel>
+	  </madsrdf:PersonalName>
+	</madsrdf:isIdentifiedByAuthority>
+      </madsrdf:RWO>
+    </madsrdf:identifiesRWO>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Latn">Franklin, Venīamin, 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>Franklin, Venīamin,</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Latn">4001 $aFranklin, Venīamin,$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Latn">Franklin, V. (Venīamin), 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>Franklin, V.</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>(Venīamin),</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Latn">4001 $aFranklin, V.$q(Venīamin),$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Latn">Firānklīn, Binzhāmīn, 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>Firānklīn, Binzhāmīn,</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Latn">4001 $aFirānklīn, Binzhāmīn,$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Latn">Fu-lan-kʻo-lin, 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>Fu-lan-kʻo-lin,</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Latn">4001 $aFu-lan-kʻo-lin,$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Latn">Fu-lan-kʻo-lin, Mu-chieh-ming, 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>Fu-lan-kʻo-lin, Mu-chieh-ming,</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Latn">4001 $aFu-lan-kʻo-lin, Mu-chieh-ming,$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Latn">Franklin, Ben, 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>Franklin, Ben,</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Latn">4001 $aFranklin, Ben,$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Latn">Franklin, Dr. (Benjamin), 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>Franklin,</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:TermsOfAddressNameElement>
+	    <madsrdf:elementValue>Dr.</madsrdf:elementValue>
+	  </madsrdf:TermsOfAddressNameElement>
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>(Benjamin),</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Latn">4001 $aFranklin,$cDr.$q(Benjamin),$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Latn">Franklin, B. (Benjamin), 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>Franklin, B.</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>(Benjamin),</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Latn">4001 $aFranklin, B.$q(Benjamin),$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Latn">Franklin, Beniamino, 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>Franklin, Beniamino,</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Latn">4001 $aFranklin, Beniamino,$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Latn">Tradesman of Philadelphia, 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>Tradesman of Philadelphia,</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Latn">4000 $aTradesman of Philadelphia,$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Latn">Pirāṅḷin̲, Peñcamin̲, 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>Pirāṅḷin̲, Peñcamin̲,</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Latn">4001 $aPirāṅḷin̲, Peñcamin̲,$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Cyrl">Франклин, Бенджамин, 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>Франклин, Бенджамин,</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Cyrl">4001 $aФранклин, Бенджамин,$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Latn">Franklin, Bendzhamin, 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>Franklin, Bendzhamin,</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Latn">4001 $aFranklin, Bendzhamin,$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Hebr">פראנקלין, בנימין</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>פראנקלין, בנימין</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Hebr">4001 $aפראנקלין, בנימין</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Hebr">פראנקלין, בנימין, 1790־1706</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>פראנקלין, בנימין,</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1790־1706</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Hebr">4001 $aפראנקלין, בנימין,$d1790־1706</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Arab">فرانكلين، بنجامين، 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>فرانكلين، بنجامين،</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Arab">4001 $aفرانكلين، بنجامين،$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Arab">فرانكلين، بنيامين</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>فرانكلين، بنيامين</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Arab">4001 $aفرانكلين، بنيامين</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Arab">فرانكلين، بنڇامين</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>فرانكلين، بنڇامين</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Arab">4001 $aفرانكلين، بنڇامين</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasVariant>
+      <madsrdf:PersonalName>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="zxx-Hani">富兰克林, 1706-1790</madsrdf:variantLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:FullNameElement>
+	    <madsrdf:elementValue>富兰克林,</madsrdf:elementValue>
+	  </madsrdf:FullNameElement>
+	  <madsrdf:DateNameElement>
+	    <madsrdf:elementValue>1706-1790</madsrdf:elementValue>
+	  </madsrdf:DateNameElement>
+	</madsrdf:elementList>
+	<bflc:marcKey xml:lang="zxx-Hani">4001 $a富兰克林,$d1706-1790</bflc:marcKey>
+      </madsrdf:PersonalName>
+    </madsrdf:hasVariant>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+	<madsrdf:citationSource>L'art de nager ... 1826.</madsrdf:citationSource>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+	<madsrdf:citationSource>His Fu-lan-kʻo-lin tzu chuan, 1978</madsrdf:citationSource>
+	<madsrdf:citationNote>(Fu-lan-kʻo-lin; Mu-chieh-ming Fu-lan-kʻo-lin)</madsrdf:citationNote>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+	<madsrdf:citationSource>LCCN 67-10708: Montgomery, E. R. Old Ben Franklin's Philadelphie, 1967.</madsrdf:citationSource>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+	<madsrdf:citationSource>LCCN 29-24258: The Immortal mentor, 1810</madsrdf:citationSource>
+	<madsrdf:citationNote>(hdg.: Franklin, Benjamin, 1706-1790; usage: Dr. Franklin; variant: Franklin, B.)</madsrdf:citationNote>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+	<madsrdf:citationSource>L'armonica, 1769:</madsrdf:citationSource>
+	<madsrdf:citationNote>t.p. (Beniamino Franklin)</madsrdf:citationNote>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+	<madsrdf:citationSource>Franklin, Benjamin. Plain truth, or, Serious considerations on the present state of the city of Philadelphia and province of Pennsylvania, 1747:</madsrdf:citationSource>
+	<madsrdf:citationNote>t.p. (by a tradesman of Philadelphia)</madsrdf:citationNote>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+	<madsrdf:citationSource>Cintan̲aiyāḷar Peñcamin̲ Pirāṅḷin̲, 2004.</madsrdf:citationSource>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+	<madsrdf:citationSource>Istorii︠a︡ poselenii︠a︡ v Plimute ..., 1987:</madsrdf:citationSource>
+	<madsrdf:citationNote>t.p. (Bendzhamin Franklin)</madsrdf:citationNote>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+	<madsrdf:citationSource>http://www.biography.com/people/benjamin-franklin-9301234</madsrdf:citationSource>
+	<madsrdf:citationNote>(Benjamin Franklin, inventor, printer, publisher, diplomat, political leader, scientist, writer; born January 17, 1706 in Boston Massachusetts; died April 17, 1790 at Philadelphia, Pennsylvania.)</madsrdf:citationNote>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:editorialNote>[Machine-derived non-Latin script reference project.]</madsrdf:editorialNote>
+    <madsrdf:editorialNote>[Non-Latin script references not evaluated.]</madsrdf:editorialNote>
+    <identifiers:lccn xmlns:identifiers="http://id.loc.gov/vocabulary/identifiers/">n 79043402</identifiers:lccn>
+    <identifiers:local xmlns:identifiers="http://id.loc.gov/vocabulary/identifiers/">(OCoLC)oca00276823</identifiers:local>
+    <madsrdf:classification>
+      <lcc:ClassNumber rdf:about="http://id.loc.gov/authorities/classification/PS745-PS752" xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/lcc#Range"/>
+	<madsrdf:authoritativeLabel>Franklin, Benjamin</madsrdf:authoritativeLabel>
+	<madsrdf:code>PS745-PS752</madsrdf:code>
+	<rdfs:label>Language And Literature--American literature--Individual authors--Colonial period (17th and 18th centuries)--Franklin, Benjamin</rdfs:label>
+	<bf:assigner>
+	  <madsrdf:CorporateName rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel>United States, Library of Congress</madsrdf:authoritativeLabel>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</madsrdf:code>
+	  </madsrdf:CorporateName>
+	</bf:assigner>
+      </lcc:ClassNumber>
+    </madsrdf:classification>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings"/>
+    <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/names"/>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/names/collection_LCNAF"/>
+    <madsrdf:hasRelatedAuthority>
+      <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2013006508">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	<madsrdf:authoritativeLabel>Saunders, Richard, 1706-1790</madsrdf:authoritativeLabel>
+      </madsrdf:PersonalName>
+    </madsrdf:hasRelatedAuthority>
+    <madsrdf:hasReciprocalAuthority>
+      <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n85072885">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	<madsrdf:authoritativeLabel>Pennsylvania. Governor (1785-1788 : Franklin)</madsrdf:authoritativeLabel>
+      </madsrdf:CorporateName>
+    </madsrdf:hasReciprocalAuthority>
+    <madsrdf:hasExactExternalAuthority rdf:resource="http://viaf.org/viaf/sourceID/LC%7Cn++79043402#skos:Concept"/>
+    <madsrdf:hasRelatedAuthority>
+      <madsrdf:NameTitle rdf:about="http://id.loc.gov/authorities/names/no2005062071">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	<madsrdf:authoritativeLabel>Franklin, Benjamin, 1706-1790. Works. Selections (2004 : Morse)</madsrdf:authoritativeLabel>
+      </madsrdf:NameTitle>
+    </madsrdf:hasRelatedAuthority>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:PersonalName rdf:about="http://id.worldcat.org/fast/34115">
+	<bflc:marcKey>1001 $aFranklin, Benjamin,$d1706-1790</bflc:marcKey>
+	<madsrdf:authoritativeLabel>Franklin, Benjamin, 1706-1790</madsrdf:authoritativeLabel>
+      </madsrdf:PersonalName>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://vocab.getty.edu/ulan/500331804"/>
+    <madsrdf:hasRelatedAuthority rdf:resource="http://vocab.getty.edu/ulan/500331804"/>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:Topic rdf:about="http://www.wikidata.org/entity/Q34969">
+	<madsrdf:authoritativeLabel>Benjamin Franklin</madsrdf:authoritativeLabel>
+      </madsrdf:Topic>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:identifiesRWO>
+      <madsrdf:PersonalName rdf:about="https://d-nb.info/gnd/118534912">
+	<rdfs:label>Franklin, Benjamin</rdfs:label>
+	<madsrdf:authoritativeLabel>Franklin, Benjamin</madsrdf:authoritativeLabel>
+      </madsrdf:PersonalName>
+    </madsrdf:identifiesRWO>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:PersonalName rdf:about="https://id.ndl.go.jp/auth/ndlna/00440037">
+	<bflc:marcKey>1001 $aFranklin, Benjamin,$d1706-1790</bflc:marcKey>
+	<madsrdf:authoritativeLabel>Franklin, Benjamin, 1706-1790</madsrdf:authoritativeLabel>
+      </madsrdf:PersonalName>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:identifiesRWO rdf:resource="https://isni.org/isni/0000000121339941"/>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1979-05-03T00:00:00</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new</ri:recordStatus>
+	<ri:recordContentSource>
+	  <madsrdf:CorporateName rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel>United States, Library of Congress</madsrdf:authoritativeLabel>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</madsrdf:code>
+	  </madsrdf:CorporateName>
+	</ri:recordContentSource>
+	<ri:languageOfCataloging>
+	  <madsrdf:Language rdf:about="http://id.loc.gov/vocabulary/iso639-2/eng">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/iso639-2/iso639-2_Language"/>
+	    <madsrdf:authoritativeLabel xml:lang="en">English</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="fr">anglais</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="de">Englisch</madsrdf:authoritativeLabel>
+	    <madsrdf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</madsrdf:code>
+	  </madsrdf:Language>
+	</ri:languageOfCataloging>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-08T06:47:55</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revised</ri:recordStatus>
+	<ri:recordContentSource>
+	  <madsrdf:CorporateName rdf:about="http://id.loc.gov/vocabulary/organizations/ocolc">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel>Online Computer Library Center, Inc.</madsrdf:authoritativeLabel>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">OCoLC</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">ocolc</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-ocolc</madsrdf:code>
+	  </madsrdf:CorporateName>
+	</ri:recordContentSource>
+	<ri:languageOfCataloging>
+	  <madsrdf:Language rdf:about="http://id.loc.gov/vocabulary/iso639-2/eng">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/iso639-2/iso639-2_Language"/>
+	    <madsrdf:authoritativeLabel xml:lang="en">English</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="fr">anglais</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="de">Englisch</madsrdf:authoritativeLabel>
+	    <madsrdf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</madsrdf:code>
+	  </madsrdf:Language>
+	</ri:languageOfCataloging>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Franklin, Benjamin, 1706-1790</skos:prefLabel>
+    <skos:prefLabel xml:lang="zxx-Hebr">פראנקלין, בנימין, 1790־1706</skos:prefLabel>
+    <skos:prefLabel xml:lang="zxx-Arab">فرانكلين، بنجامين، 1706-1790</skos:prefLabel>
+    <skos:prefLabel xml:lang="zxx-Hani">富兰克林, 1706-1790</skos:prefLabel>
+    <skos:prefLabel xml:lang="zxx-Cyrl">Франклин, Бенджамин, 1706-1790</skos:prefLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Latn">Franklin, Venīamin, 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Latn">Franklin, V. (Venīamin), 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Latn">Firānklīn, Binzhāmīn, 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Latn">Fu-lan-kʻo-lin, 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Latn">Fu-lan-kʻo-lin, Mu-chieh-ming, 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Latn">Franklin, Ben, 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Latn">Franklin, Dr. (Benjamin), 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Latn">Franklin, B. (Benjamin), 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Latn">Franklin, Beniamino, 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Latn">Tradesman of Philadelphia, 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Latn">Pirāṅḷin̲, Peñcamin̲, 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Cyrl">Франклин, Бенджамин, 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Latn">Franklin, Bendzhamin, 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Hebr">פראנקלין, בנימין</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Hebr">פראנקלין, בנימין, 1790־1706</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Arab">فرانكلين، بنجامين، 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Arab">فرانكلين، بنيامين</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Arab">فرانكلين، بنڇامين</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="zxx-Hani">富兰克林, 1706-1790</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skos:related>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/names/n85072885">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel>Pennsylvania. Governor (1785-1788 : Franklin)</skos:prefLabel>
+      </rdf:Description>
+    </skos:related>
+    <skos:semanticRelation>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/names/no2013006508">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel>Saunders, Richard, 1706-1790</skos:prefLabel>
+      </rdf:Description>
+    </skos:semanticRelation>
+    <skos:semanticRelation>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/names/no2005062071">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel>Franklin, Benjamin, 1706-1790. Works. Selections (2004 : Morse)</skos:prefLabel>
+      </rdf:Description>
+    </skos:semanticRelation>
+    <skos:semanticRelation rdf:resource="http://vocab.getty.edu/ulan/500331804"/>
+    <skos:exactMatch rdf:resource="http://viaf.org/viaf/sourceID/LC%7Cn++79043402#skos:Concept"/>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="http://id.worldcat.org/fast/34115">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel>Franklin, Benjamin, 1706-1790</skos:prefLabel>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/ulan/500331804"/>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="http://www.wikidata.org/entity/Q34969">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel>Benjamin Franklin</skos:prefLabel>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="https://id.ndl.go.jp/auth/ndlna/00440037">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel>Franklin, Benjamin, 1706-1790</skos:prefLabel>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:editorialNote>[Machine-derived non-Latin script reference project.]</skos:editorialNote>
+    <skos:editorialNote>[Non-Latin script references not evaluated.]</skos:editorialNote>
+    <skos:inScheme rdf:resource="http://id.loc.gov/authorities/names"/>
+    <skos:altLabel xml:lang="zxx-Latn">Franklin, Venīamin, 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Latn">Franklin, V. (Venīamin), 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Latn">Firānklīn, Binzhāmīn, 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Latn">Fu-lan-kʻo-lin, 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Latn">Fu-lan-kʻo-lin, Mu-chieh-ming, 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Latn">Franklin, Ben, 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Latn">Franklin, Dr. (Benjamin), 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Latn">Franklin, B. (Benjamin), 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Latn">Franklin, Beniamino, 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Latn">Tradesman of Philadelphia, 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Latn">Pirāṅḷin̲, Peñcamin̲, 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Cyrl">Франклин, Бенджамин, 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Latn">Franklin, Bendzhamin, 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Hebr">פראנקלין, בנימין</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Hebr">פראנקלין, בנימין, 1790־1706</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Arab">فرانكلين، بنجامين، 1706-1790</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Arab">فرانكلين، بنيامين</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Arab">فرانكلين، بنڇامين</skos:altLabel>
+    <skos:altLabel xml:lang="zxx-Hani">富兰克林, 1706-1790</skos:altLabel>
+    <skos:changeNote>
+      <cs:ChangeSet xmlns:cs="http://purl.org/vocab/changeset/schema#">
+	<cs:subjectOfChange rdf:resource="http://id.loc.gov/authorities/names/n79043402"/>
+	<cs:creatorName>United States, Library of CongressDLCdlcUS-dlc</cs:creatorName>
+	<cs:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1979-05-03T00:00:00</cs:createdDate>
+	<cs:changeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new</cs:changeReason>
+      </cs:ChangeSet>
+    </skos:changeNote>
+    <skos:changeNote>
+      <cs:ChangeSet xmlns:cs="http://purl.org/vocab/changeset/schema#">
+	<cs:subjectOfChange rdf:resource="http://id.loc.gov/authorities/names/n79043402"/>
+	<cs:creatorName>Online Computer Library Center, Inc.OCoLCocolcUS-ocolc</cs:creatorName>
+	<cs:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-08T06:47:55</cs:createdDate>
+	<cs:changeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revised</cs:changeReason>
+      </cs:ChangeSet>
+    </skos:changeNote>
+  </madsrdf:PersonalName>
+</rdf:RDF>
