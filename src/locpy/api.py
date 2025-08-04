@@ -108,13 +108,32 @@ class LocAPI(object):
 
         return []
 
-    def search(self, query):
+    # not very DRY since this largely repeats logic of suggest method
+    # could these two be combined and search param for search type be provided?
+    def search(self, query, authority: Literal[None, 'names', 'subjects']):
         """Query LoC's suggest service API using keyword search. Returns a
         list of search results, or an empty list for an error.
 
         :param query: Search query (string)
+        :param authority: Authority to search ('names' or 'subjects')
         """
-        pass
+        # keyword search needs to require an authority, because otherwise
+        # it returns many results from the resources authority
+        query_url = f'{self.uri_base}{authority}/suggest2'
+
+        params = {
+            'q': query,
+            'searchtype': 'keyword'
+        }
+        response = requests.get(query_url, params=params)
+        if response.status_code == requests.codes.ok:
+            data = SRUResult(response.json())
+            if data.total_results > 0:
+                return data.records
+
+        response.raise_for_status()
+
+        return []
 
     def retrieve_label(self, label):
         """Query LoC's label retrieval API to return a URI from

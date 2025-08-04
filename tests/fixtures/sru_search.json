@@ -1,0 +1,647 @@
+{
+    "q": "Benjamin Franklin*",
+    "count": 643,
+    "pagesize": 10,
+    "start": 1,
+    "sortmethod": "rank",
+    "searchtype": "keyword",
+    "directory": "/authorities/names/",
+    "hits": [
+      {
+        "suggestLabel": "Joslin, Benjamin F. (Benjamin Franklin), 1796-1861",
+        "uri": "http://id.loc.gov/authorities/names/nr91002273",
+        "aLabel": "Joslin, Benjamin F. (Benjamin Franklin), 1796-1861",
+        "vLabel": "Joslin, B. F. (Benjamin Franklin), 1796-1861",
+        "sLabel": "Joslin, Benjamin F.",
+        "code": "",
+        "token": "nr91002273",
+        "rank": "13896",
+        "browseAgent": "JOSLIN  BENJAMIN F   BENJAMIN FRANKLIN   17961861",
+        "more": {
+          "nonlatinLabels": [],
+          "vernacularLabels": [],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "genres": [],
+          "variantLabels": [
+            "Joslin, B. F. (Benjamin Franklin), 1796-1861",
+            "Joslyn, Benjamin F. (Benjamin Franklin), 1796-1861",
+            "Joslyn, Benjamin Franklin, 1796-1861",
+            "Joslin, Benjamin Franklin, 1796-1861"
+          ],
+          "languages": [],
+          "relateds": [],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : His Principles of homœopathy, 1850: t.p. (B.F. Joslin, M.D.)",
+            "found : MWA/NAIP files (hdg.: Joslin, Benjamin F. (Benjamin Franklin), 1796-1861; usage: Benjamin F. Joslin; B.F. Joslin; variant: Benjamin F. Joslyn)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [
+            "1796"
+          ],
+          "deathdates": [
+            "1861"
+          ],
+          "lcclasss": [],
+          "lcclasses": [],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "1001 $aJoslin, Benjamin F.$q(Benjamin Franklin),$d1796-1861"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Brainerd, Benjamin F. (Benjamin Franklin), 1835-1920",
+        "uri": "http://id.loc.gov/authorities/names/n2005031660",
+        "aLabel": "Brainerd, Benjamin F. (Benjamin Franklin), 1835-1920",
+        "vLabel": "Brainerd, Benjamin Franklin, 1835-1920",
+        "sLabel": "Brainerd, Benjamin F.",
+        "code": "",
+        "token": "n2005031660",
+        "rank": "11427",
+        "browseAgent": "BRAINERD  BENJAMIN F   BENJAMIN FRANKLIN   18351920",
+        "more": {
+          "nonlatinLabels": [],
+          "vernacularLabels": [],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "genres": [],
+          "variantLabels": [
+            "Brainerd, Benjamin Franklin, 1835-1920",
+            "Brainerd, B. F. (Benjamin Franklin), 1835-1920",
+            "Brainard, Benjamin F., 1835-1920"
+          ],
+          "languages": [],
+          "relateds": [],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : Benjamin F. Brainerd, 1835-1920, c2001: disc label (Benjamin F. Brainerd) accompanying manual p. 47 (Benjamin Franklin Brainerd, b. Dec. 16, 1835 New Sharon, Franklin Co., ME; d. Nov. 9, 1920 Island Lake, Chippewa Co., WI) p. 59 (B. F. Brainerd; Benjamin F. Brainard [changed surname spelling during his lifetime])"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [],
+          "deathdates": [],
+          "lcclasss": [],
+          "lcclasses": [],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "1001 $aBrainerd, Benjamin F.$q(Benjamin Franklin),$d1835-1920"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Leete, Benjamin Franklin, 1831-1927",
+        "uri": "http://id.loc.gov/authorities/names/n2010041497",
+        "aLabel": "Leete, Benjamin Franklin, 1831-1927",
+        "vLabel": "Leet, Benjamin Franklin, 1831-1927",
+        "sLabel": "Leete, Benjamin Franklin",
+        "code": "",
+        "token": "n2010041497",
+        "rank": "11346",
+        "browseAgent": "LEETE  BENJAMIN FRANKLIN  18311927",
+        "more": {
+          "nonlatinLabels": [],
+          "vernacularLabels": [],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "genres": [],
+          "variantLabels": [
+            "Leet, Benjamin Franklin, 1831-1927",
+            "Leete, B. F. (Benjamin Franklin), 1831-1927",
+            "Leet, B. F. (Benjamin Franklin), 1831-1927"
+          ],
+          "languages": [
+            "English"
+          ],
+          "relateds": [],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : NUCMC data from Nevada Historical Society for His Papers, 1856-1921 (Leete, Benjamin Franklin, 1831-1927; businessman and politician, of Nev.; born in Lockport, N.Y.; studied civil engineering; employed in construction of the New York Central Railroad; 1858, he took passage for California and arrived at San Francisco; employed as an engineer on the construction of Theodore Judah's California Central Railroad Company; recognizing that salt was a needed mineral in the reduction of Comstock Lode silver ore, Leete spent three years perfecting his salt manufacturing apparatus; in 1871, Leete's Eagle Salt Works in Churchill County, Nev. began furnishing salt to area consumers)",
+            "found : Map of the American River Water and Mining Co.'s proposed canals, 1860: map recto (surveyed by B.F. Leet)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [
+            "1831"
+          ],
+          "deathdates": [
+            "1927"
+          ],
+          "lcclasss": [],
+          "lcclasses": [],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "1001 $aLeete, Benjamin Franklin,$d1831-1927"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Franklin, Benjamin, 1706-1790",
+        "uri": "http://id.loc.gov/authorities/names/n79043402",
+        "aLabel": "Franklin, Benjamin, 1706-1790",
+        "vLabel": "Franklin, Venīamin, 1706-1790",
+        "sLabel": "Franklin, Benjamin",
+        "code": "",
+        "token": "n79043402",
+        "rank": "10788",
+        "browseAgent": "FRANKLIN  BENJAMIN  17061790",
+        "more": {
+          "nonlatinLabels": [
+            "פראנקלין, בנימין, 1790־1706",
+            "فرانكلين، بنجامين، 1706-1790",
+            "富兰克林, 1706-1790",
+            "Франклин, Бенджамин, 1706-1790"
+          ],
+          "vernacularLabels": [
+            "פראנקלין, בנימין, 1790־1706@zxx-Hebr",
+            "فرانكلين، بنجامين، 1706-1790@zxx-Arab",
+            "富兰克林, 1706-1790@zxx-Hani",
+            "Франклин, Бенджамин, 1706-1790@zxx-Cyrl"
+          ],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "notes": [
+            "[Machine-derived non-Latin script reference project.]"
+          ],
+          "genres": [],
+          "variantLabels": [
+            "Franklin, Venīamin, 1706-1790",
+            "Franklin, V. (Venīamin), 1706-1790",
+            "Firānklīn, Binzhāmīn, 1706-1790",
+            "Fu-lan-kʻo-lin, 1706-1790",
+            "Fu-lan-kʻo-lin, Mu-chieh-ming, 1706-1790",
+            "Franklin, Ben, 1706-1790",
+            "Franklin, Dr. (Benjamin), 1706-1790",
+            "Franklin, B. (Benjamin), 1706-1790",
+            "Franklin, Beniamino, 1706-1790",
+            "Tradesman of Philadelphia, 1706-1790",
+            "Pirāṅḷin̲, Peñcamin̲, 1706-1790",
+            "Франклин, Бенджамин, 1706-1790",
+            "Franklin, Bendzhamin, 1706-1790",
+            "פראנקלין, בנימין",
+            "פראנקלין, בנימין, 1790־1706",
+            "فرانكلين، بنجامين، 1706-1790",
+            "فرانكلين، بنيامين",
+            "فرانكلين، بنڇامين",
+            "富兰克林, 1706-1790"
+          ],
+          "languages": [
+            "English"
+          ],
+          "relateds": [
+            "Saunders, Richard, 1706-1790",
+            "Pennsylvania. Governor (1785-1788 : Franklin)"
+          ],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : L'art de nager ... 1826.",
+            "found : His Fu-lan-kʻo-lin tzu chuan, 1978 (Fu-lan-kʻo-lin; Mu-chieh-ming Fu-lan-kʻo-lin)",
+            "found : LCCN 67-10708: Montgomery, E. R. Old Ben Franklin's Philadelphie, 1967.",
+            "found : LCCN 29-24258: The Immortal mentor, 1810 (hdg.: Franklin, Benjamin, 1706-1790; usage: Dr. Franklin; variant: Franklin, B.)",
+            "found : L'armonica, 1769: t.p. (Beniamino Franklin)",
+            "found : Franklin, Benjamin. Plain truth, or, Serious considerations on the present state of the city of Philadelphia and province of Pennsylvania, 1747: t.p. (by a tradesman of Philadelphia)",
+            "found : Cintan̲aiyāḷar Peñcamin̲ Pirāṅḷin̲, 2004.",
+            "found : Istorii︠a︡ poselenii︠a︡ v Plimute ..., 1987: t.p. (Bendzhamin Franklin)",
+            "found : http://www.biography.com/people/benjamin-franklin-9301234 (Benjamin Franklin, inventor, printer, publisher, diplomat, political leader, scientist, writer; born January 17, 1706 in Boston Massachusetts; died April 17, 1790 at Philadelphia, Pennsylvania.)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [
+            "1706-01-17"
+          ],
+          "deathdates": [
+            "1790-04-17"
+          ],
+          "lcclasss": [
+            {
+              "code": "PS745-PS752",
+              "assigner": "dlc"
+            }
+          ],
+          "lcclasses": [
+            {
+              "code": "PS745-PS752",
+              "assigner": "dlc"
+            }
+          ],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "1001 $aFranklin, Benjamin,$d1706-1790"
+          ],
+          "vernacularMarcKeys": [
+            "4001 $aפראנקלין, בנימין,$d1790־1706@zxx-Hebr",
+            "4001 $aفرانكلين، بنجامين،$d1706-1790@zxx-Arab",
+            "4001 $a富兰克林,$d1706-1790@zxx-Hani",
+            "4001 $aФранклин, Бенджамин,$d1706-1790@zxx-Cyrl"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Hallett, Benjamin Franklin, 1797-1862",
+        "uri": "http://id.loc.gov/authorities/names/nr90022253",
+        "aLabel": "Hallett, Benjamin Franklin, 1797-1862",
+        "vLabel": "Hallet, Benjamin Franklin, 1797-1862",
+        "sLabel": "Hallett, Benjamin Franklin",
+        "code": "",
+        "token": "nr90022253",
+        "rank": "10513",
+        "browseAgent": "HALLETT  BENJAMIN FRANKLIN  17971862",
+        "more": {
+          "nonlatinLabels": [],
+          "vernacularLabels": [],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "genres": [],
+          "variantLabels": [
+            "Hallet, Benjamin Franklin, 1797-1862",
+            "Hallett, B. F. (Benjamin Franklin), 1797-1862",
+            "Hallett, Mr. (Benjamin Franklin), 1797-1862",
+            "Hallette, B. F. (Benjamin Franklin), 1797-1862",
+            "Hallett, B. F. (Benjamin Franklin), 1797-1862"
+          ],
+          "languages": [
+            "English"
+          ],
+          "relateds": [
+            "Hallett, B. F. (Benjamin Franklin), 1797-1862"
+          ],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : Greene, C.G. Whigery is federalism, 1849: p. 20 (B.F. Hallett)",
+            "found : NUC pre-56 (Hallett, Benjamin Franklin, 1797-1862)",
+            "found : Hallett, Benjamin Franklin. Oration before the Democratic citizens of Worcester county, Massachusetts, at Millbury, July 4, 1839, 1839: title page (Benjamin Franklin Hallett) cover (Benjamin F. Hallett) page 3 (B.F. Hallett, esq., Boston)",
+            "found : Campbell, T. The pleasures of hope, 1811: inscr. (B.F. Hallette, Boston)",
+            "found : MWA/NAIP files, Oct. 5, 2007 (hdg.: Hallett, Benjamin Franklin, 1797-1862; usage: Benjamin Franklin Hallett; Benjamin F. Hallett; B.F. Hallett; Mr. Hallett; var: B.F. Hallette; Benjamin Franklin Hallet; note: statesman, lawyer, and journalist; b. 2 Dec. 1797, Osterville, Mass.; son of Benjamin Hallett and Abigail Lovell; d. 30 Sept. 1862)",
+            "found : Who was who in America, 1607-1896 (Hallett, Benjamin Franklin; lawyer, editor; born Osterville, Mass., December 2, 1797; grad. Brown University, 1816; studied law in Providence, R.I.; admitted to R.I. bar, 1819, practiced intermittently; editor Providence Journal, 1821-1828 (credited with bringing about R.I. Supreme Court reform); editor Providence Daily Advertiser, 1829-1831; editor Boston Daily Advocate (anti-Masonic paper), 1838; district attorney, Boston, 1852; died Boston, September 30, 1862)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [
+            "1797-12-02"
+          ],
+          "deathdates": [
+            "1862-09-30"
+          ],
+          "lcclasss": [],
+          "lcclasses": [],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "1001 $aHallett, Benjamin Franklin,$d1797-1862"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Leggett, Benjamin F. (Benjamin Franklin), 1834-1924",
+        "uri": "http://id.loc.gov/authorities/names/no2010045929",
+        "aLabel": "Leggett, Benjamin F. (Benjamin Franklin), 1834-1924",
+        "vLabel": "Leggett, Benjamin Franklin, 1834-1924",
+        "sLabel": "Leggett, Benjamin F.",
+        "code": "",
+        "token": "no2010045929",
+        "rank": "10474",
+        "browseAgent": "LEGGETT  BENJAMIN F   BENJAMIN FRANKLIN   18341924",
+        "more": {
+          "nonlatinLabels": [],
+          "vernacularLabels": [],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "genres": [],
+          "variantLabels": [
+            "Leggett, Benjamin Franklin, 1834-1924",
+            "Leggett, Benj. F. (Benjamin Franklin), 1834-1924"
+          ],
+          "languages": [],
+          "relateds": [],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : Autograph letter signed from Benj. F. Leggett, Ward, Pennsylvania, to William Winter, New York, 1912",
+            "found : OCLC database, Feb. 17, 2010 (hdgs.: Leggett, Benj. F. (Benjamin Franklin), b. 1834; Leggett, Benjamin F., 1834-1924; usage: Benj. F. Leggett; Benjamin F. Leggett; Leggett, Benjamin F. (Benjamin Franklin), 1834-1924)",
+            "found : Who was who Am., v.1, 1942 (Leggett, Benjamin Franklin, author, educator; b. Chestertown, New York on Dec. 29, 1834; m. Sara Shaw Aug. 18, 1863; d. July 18, 1924)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [],
+          "deathdates": [],
+          "lcclasss": [],
+          "lcclasses": [],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "1001 $aLeggett, Benjamin F.$q(Benjamin Franklin),$d1834-1924"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Morgan, Benjamin Franklin, 1799-1887",
+        "uri": "http://id.loc.gov/authorities/names/nr2006002355",
+        "aLabel": "Morgan, Benjamin Franklin, 1799-1887",
+        "vLabel": "Morgan, B. F. (Benjamin Franklin), 1799-1887",
+        "sLabel": "Morgan, Benjamin Franklin",
+        "code": "",
+        "token": "nr2006002355",
+        "rank": "10364",
+        "browseAgent": "MORGAN  BENJAMIN FRANKLIN  17991887",
+        "more": {
+          "nonlatinLabels": [],
+          "vernacularLabels": [],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "genres": [],
+          "variantLabels": [
+            "Morgan, B. F. (Benjamin Franklin), 1799-1887",
+            "Morgan, Benj. F. (Benjamin Franklin), 1799-1887"
+          ],
+          "languages": [],
+          "relateds": [],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : Gallup, J.A. Pathological reflections on general diseased action, 1819: ink stamp (B.F. Morgan)",
+            "found : Holloway, L.M. Medical obituaries, 1981: p. 320 (Morgan, Benjamin Franklin, Bennington, Vt.; M.D. Castleton 1825; b. 1799; d. Feb. 4, 1887)",
+            "found : Ancestry Library Edition, via WWW, Jan. 23, 2006: 1850 U.S. Federal census (Benjamin F. Morgan; age 51; b. Vermont; resident Pownal, Bennington, Vermont; physician)",
+            "found : Family search, via WWW, Jan. 23, 2006 (Benj F. Morgan; b. 30 Sep 1799 Pownal Twp. Bennington, Vermont)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [],
+          "deathdates": [],
+          "lcclasss": [],
+          "lcclasses": [],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "1001 $aMorgan, Benjamin Franklin,$d1799-1887"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Shambaugh, Benjamin Franklin, 1871-1940",
+        "uri": "http://id.loc.gov/authorities/names/n88071116",
+        "aLabel": "Shambaugh, Benjamin Franklin, 1871-1940",
+        "vLabel": "Shambaugh, Benj. F. (Benjamin Franklin), 1871-1940",
+        "sLabel": "Shambaugh, Benjamin Franklin",
+        "code": "",
+        "token": "n88071116",
+        "rank": "10364",
+        "browseAgent": "SHAMBAUGH  BENJAMIN FRANKLIN  18711940",
+        "more": {
+          "nonlatinLabels": [],
+          "vernacularLabels": [],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "genres": [],
+          "variantLabels": [
+            "Shambaugh, Benj. F. (Benjamin Franklin), 1871-1940",
+            "Shambaugh, B. F. (Benjamin Franklin), 1871-1940"
+          ],
+          "languages": [],
+          "relateds": [],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : His The constitutions of Iowa, 1934: t.p. (Benj. F. Shambaugh, prof. of pol. sci.; U. of Iowa)",
+            "found : LC in OCLC, 12-22-88 (hdg.: Shambaugh, Benjamin Franklin, 1871-1940; usage: Benjamin Franklin Shambaugh)",
+            "found : OCLC, June 10, 1999 (hdgs.: Shambaugh, Benjamin Franklin, 1871-1940; Shambaugh, Benjamin F. (Benjamin Franklin), 1871-1940; usage: Benjamin F. Shambaugh; Benj. F. Shambaugh; Benjamin Franklin Shambaugh; B.F. Shambaugh)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [],
+          "deathdates": [],
+          "lcclasss": [],
+          "lcclasses": [],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "10010$aShambaugh, Benjamin Franklin,$d1871-1940"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Franklin, Benjamin, 1650-1727",
+        "uri": "http://id.loc.gov/authorities/names/nr2002000012",
+        "aLabel": "Franklin, Benjamin, 1650-1727",
+        "vLabel": "B. F. (Benjamin Franklin), 1650-1727",
+        "sLabel": "Franklin, Benjamin",
+        "code": "",
+        "token": "nr2002000012",
+        "rank": "10364",
+        "browseAgent": "FRANKLIN  BENJAMIN  16501727",
+        "more": {
+          "nonlatinLabels": [],
+          "vernacularLabels": [],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "genres": [],
+          "variantLabels": [
+            "B. F. (Benjamin Franklin), 1650-1727",
+            "F., B. (Benjamin Franklin), 1650-1727"
+          ],
+          "languages": [],
+          "relateds": [],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : Vincent, N. A discourse on forgiveness, 1722: p. 4 (B.F.)",
+            "found : Drake, S. The history and antiquities of Boston, 1856: p. 573, etc. (Franklin, Benjamin; silk-dyer; b. Mar. 22, 1650; d. Mar. 17, 1727)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [],
+          "deathdates": [],
+          "lcclasss": [],
+          "lcclasses": [],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "1001 $aFranklin, Benjamin,$d1650-1727"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Sterett, Benjamin Franklin, 1822-1891",
+        "uri": "http://id.loc.gov/authorities/names/nr2005017159",
+        "aLabel": "Sterett, Benjamin Franklin, 1822-1891",
+        "vLabel": "Sterett, B. F. (Benjamin Franklin), 1822-1891",
+        "sLabel": "Sterett, Benjamin Franklin",
+        "code": "",
+        "token": "nr2005017159",
+        "rank": "10364",
+        "browseAgent": "STERETT  BENJAMIN FRANKLIN  18221891",
+        "more": {
+          "nonlatinLabels": [],
+          "vernacularLabels": [],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "genres": [],
+          "variantLabels": [
+            "Sterett, B. F. (Benjamin Franklin), 1822-1891",
+            "Sterrett, Benjamin Franklin, 1822-1891"
+          ],
+          "languages": [],
+          "relateds": [],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : Milburn's motto, 1869: t.p. (B.F. Sterett; San Francisco printer",
+            "found : AncestryPlus, July 8, 2005: 1880 U.S. census (Benjamin F. Sterett; San Franciso printer; b. Penn.; age 56)",
+            "found : AncestryPlus, July 8, 2005: Ancestry World Tree (Benjamin Franklin Sterrett; b. 30 Nov. 1822 in Salem, Penn.; San Franciso printer; d. Jun. 1891 in San Francisco)",
+            "found : MWA/NAIP files (hdg.: Sterett, Benjamin Franklin, 1822-1891)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [],
+          "deathdates": [],
+          "lcclasss": [],
+          "lcclasses": [],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "1001 $aSterett, Benjamin Franklin,$d1822-1891"
+          ],
+          "gacs": []
+        }
+      }
+    ]
+  }

@@ -119,7 +119,7 @@ class TestLocAPI(object):
         )
 
         # test suggest results
-        sru_fixture = os.path.join(FIXTURES_PATH, 'sru_search.json')
+        sru_fixture = os.path.join(FIXTURES_PATH, 'sru_suggest.json')
         with open(sru_fixture, encoding='utf-8') as srufile:
             mock_result = json.load(srufile)
         mockrequests.get.return_value.json.return_value = mock_result
@@ -150,3 +150,60 @@ class TestLocAPI(object):
             loc.suggest(term, authority='subjects')
 
         mocksuggest.assert_called_with('Franklin, Benjamin', authority='subjects')
+
+    @patch('locpy.api.requests')
+    def test_search(self, mockrequests):
+        loc = LocAPI()
+        mockrequests.codes = requests.codes
+        # check that query with no results returns empty lists
+        mock_result = {
+            "q": "notanentity*",
+            "count": 0,
+            "pagesize": 10,
+            "start": 1,
+            "sortmethod": "rank",
+            "searchtype": "keyword",
+            "directory": "/authorities/names/",
+            "hits": []
+        }
+        mockrequests.get.return_value.status_code = requests.codes.ok
+        mockrequests.get.return_value.json.return_value = mock_result
+        assert loc.search('notanentity', 'names') == []
+        mockrequests.get.assert_called_with(
+            'http://id.loc.gov/authorities/names/suggest2',
+            params={'q': 'notanentity', 'searchtype': 'keyword'}
+        )
+
+        # test suggest results
+        sru_fixture = os.path.join(FIXTURES_PATH, 'sru_search.json')
+        with open(sru_fixture, encoding='utf-8') as srufile:
+            mock_result = json.load(srufile)
+        mockrequests.get.return_value.json.return_value = mock_result
+        results = loc.search('Benjamin Franklin', 'names')
+        assert isinstance(results, list)
+        assert isinstance(results[0], SRUItem)
+        mockrequests.get.assert_called_with(
+            'http://id.loc.gov/authorities/names/suggest2',
+            params={'q': 'Benjamin Franklin', 'searchtype': 'keyword'}
+        )
+
+        # bad status code should return empty list
+        mockrequests.get.return_value.status_code = requests.codes.forbidden
+        assert loc.search('test', 'names') == []
+
+    # not sure about these next two tests - what good do they serve?
+    def test_search_names(self):
+        loc = LocAPI()
+        term = 'Benjamin Franklin'
+        with patch.object(loc, 'search') as mocksearch:
+            loc.search(term, authority='names')
+
+        mocksearch.assert_called_with('Benjamin Franklin', authority='names')
+
+    def test_search_subjects(self):
+        loc = LocAPI()
+        term = 'Benjamin Franklin'
+        with patch.object(loc, 'search') as mocksearch:
+            loc.search(term, authority='subjects')
+
+        mocksearch.assert_called_with('Benjamin Franklin', authority='subjects')
