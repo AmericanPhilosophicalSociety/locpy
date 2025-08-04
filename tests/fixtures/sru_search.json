@@ -1,0 +1,484 @@
+{
+    "q": "Franklin, Benjamin",
+    "count": 193,
+    "pagesize": 10,
+    "start": 1,
+    "sortmethod": "alpha",
+    "searchtype": "left-anchored",
+    "directory": "all",
+    "hits": [
+      {
+        "suggestLabel": "Franklin, Benjamin",
+        "uri": "http://id.loc.gov/authorities/names/n2015067702",
+        "aLabel": "Franklin, Benjamin",
+        "vLabel": "",
+        "sLabel": "",
+        "code": "",
+        "token": "n2015067702",
+        "rank": "",
+        "browseAgent": "FRANKLIN  BENJAMIN",
+        "more": {
+          "nonlatinLabels": [],
+          "vernacularLabels": [],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "genres": [],
+          "variantLabels": [],
+          "languages": [],
+          "relateds": [],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : Inside out music [SR] 2014?: container (Benjamin Franklin; musician; with the radio show Implosief on FM Brussel; well-known pillar of the Belgian alternative scene)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [],
+          "deathdates": [],
+          "lcclasss": [],
+          "lcclasses": [],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "1001 $aFranklin, Benjamin"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Franklin, Benjamin, 1650-1727",
+        "uri": "http://id.loc.gov/authorities/names/nr2002000012",
+        "aLabel": "Franklin, Benjamin, 1650-1727",
+        "vLabel": "",
+        "sLabel": "Franklin, Benjamin",
+        "code": "",
+        "token": "nr2002000012",
+        "rank": "",
+        "browseAgent": "FRANKLIN  BENJAMIN  16501727",
+        "more": {
+          "nonlatinLabels": [],
+          "vernacularLabels": [],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "genres": [],
+          "variantLabels": [
+            "B. F. (Benjamin Franklin), 1650-1727",
+            "F., B. (Benjamin Franklin), 1650-1727"
+          ],
+          "languages": [],
+          "relateds": [],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : Vincent, N. A discourse on forgiveness, 1722: p. 4 (B.F.)",
+            "found : Drake, S. The history and antiquities of Boston, 1856: p. 573, etc. (Franklin, Benjamin; silk-dyer; b. Mar. 22, 1650; d. Mar. 17, 1727)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [],
+          "deathdates": [],
+          "lcclasss": [],
+          "lcclasses": [],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "1001 $aFranklin, Benjamin,$d1650-1727"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Franklin, Benjamin, 1706-1790",
+        "uri": "http://id.loc.gov/authorities/names/n79043402",
+        "aLabel": "Franklin, Benjamin, 1706-1790",
+        "vLabel": "",
+        "sLabel": "Franklin, Benjamin",
+        "code": "",
+        "token": "n79043402",
+        "rank": "",
+        "browseAgent": "FRANKLIN  BENJAMIN  17061790",
+        "more": {
+          "nonlatinLabels": [
+            "פראנקלין, בנימין, 1790־1706",
+            "فرانكلين، بنجامين، 1706-1790",
+            "富兰克林, 1706-1790",
+            "Франклин, Бенджамин, 1706-1790"
+          ],
+          "vernacularLabels": [
+            "פראנקלין, בנימין, 1790־1706@zxx-Hebr",
+            "فرانكلين، بنجامين، 1706-1790@zxx-Arab",
+            "富兰克林, 1706-1790@zxx-Hani",
+            "Франклин, Бенджамин, 1706-1790@zxx-Cyrl"
+          ],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "notes": [
+            "[Machine-derived non-Latin script reference project.]"
+          ],
+          "genres": [],
+          "variantLabels": [
+            "Franklin, Venīamin, 1706-1790",
+            "Franklin, V. (Venīamin), 1706-1790",
+            "Firānklīn, Binzhāmīn, 1706-1790",
+            "Fu-lan-kʻo-lin, 1706-1790",
+            "Fu-lan-kʻo-lin, Mu-chieh-ming, 1706-1790",
+            "Franklin, Ben, 1706-1790",
+            "Franklin, Dr. (Benjamin), 1706-1790",
+            "Franklin, B. (Benjamin), 1706-1790",
+            "Franklin, Beniamino, 1706-1790",
+            "Tradesman of Philadelphia, 1706-1790",
+            "Pirāṅḷin̲, Peñcamin̲, 1706-1790",
+            "Франклин, Бенджамин, 1706-1790",
+            "Franklin, Bendzhamin, 1706-1790",
+            "פראנקלין, בנימין",
+            "פראנקלין, בנימין, 1790־1706",
+            "فرانكلين، بنجامين، 1706-1790",
+            "فرانكلين، بنيامين",
+            "فرانكلين، بنڇامين",
+            "富兰克林, 1706-1790"
+          ],
+          "languages": [
+            "English"
+          ],
+          "relateds": [
+            "Saunders, Richard, 1706-1790",
+            "Pennsylvania. Governor (1785-1788 : Franklin)"
+          ],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : L'art de nager ... 1826.",
+            "found : His Fu-lan-kʻo-lin tzu chuan, 1978 (Fu-lan-kʻo-lin; Mu-chieh-ming Fu-lan-kʻo-lin)",
+            "found : LCCN 67-10708: Montgomery, E. R. Old Ben Franklin's Philadelphie, 1967.",
+            "found : LCCN 29-24258: The Immortal mentor, 1810 (hdg.: Franklin, Benjamin, 1706-1790; usage: Dr. Franklin; variant: Franklin, B.)",
+            "found : L'armonica, 1769: t.p. (Beniamino Franklin)",
+            "found : Franklin, Benjamin. Plain truth, or, Serious considerations on the present state of the city of Philadelphia and province of Pennsylvania, 1747: t.p. (by a tradesman of Philadelphia)",
+            "found : Cintan̲aiyāḷar Peñcamin̲ Pirāṅḷin̲, 2004.",
+            "found : Istorii︠a︡ poselenii︠a︡ v Plimute ..., 1987: t.p. (Bendzhamin Franklin)",
+            "found : http://www.biography.com/people/benjamin-franklin-9301234 (Benjamin Franklin, inventor, printer, publisher, diplomat, political leader, scientist, writer; born January 17, 1706 in Boston Massachusetts; died April 17, 1790 at Philadelphia, Pennsylvania.)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [
+            "1706-01-17"
+          ],
+          "deathdates": [
+            "1790-04-17"
+          ],
+          "lcclasss": [],
+          "lcclasses": [
+            {
+              "code": "PS745-PS752",
+              "assigner": "dlc"
+            }
+          ],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "1001 $aFranklin, Benjamin,$d1706-1790"
+          ],
+          "vernacularMarcKeys": [
+            "4001 $aפראנקלין, בנימין,$d1790־1706@zxx-Hebr",
+            "4001 $aفرانكلين، بنجامين،$d1706-1790@zxx-Arab",
+            "4001 $a富兰克林,$d1706-1790@zxx-Hani",
+            "4001 $aФранклин, Бенджамин,$d1706-1790@zxx-Cyrl"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Franklin, Benjamin, 1706-1790 (Spirit)",
+        "uri": "http://id.loc.gov/authorities/names/n2008015518",
+        "aLabel": "Franklin, Benjamin, 1706-1790 (Spirit)",
+        "vLabel": "",
+        "sLabel": "Franklin, Benjamin",
+        "code": "",
+        "token": "n2008015518",
+        "rank": "",
+        "browseAgent": "FRANKLIN  BENJAMIN  17061790  SPIRIT ",
+        "more": {
+          "nonlatinLabels": [],
+          "vernacularLabels": [],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "genres": [],
+          "variantLabels": [],
+          "languages": [],
+          "relateds": [],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : Richmond, Thomas. God dealing with slavery, 1870: t.p. (spirit messages from Franklin)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [],
+          "deathdates": [],
+          "lcclasss": [],
+          "lcclasses": [],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "1001 $aFranklin, Benjamin,$d1706-1790$c(Spirit)"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Franklin, Benjamin, 1812-1878",
+        "uri": "http://id.loc.gov/authorities/names/no93017498",
+        "aLabel": "Franklin, Benjamin, 1812-1878",
+        "vLabel": "",
+        "sLabel": "Franklin, Benjamin",
+        "code": "",
+        "token": "no93017498",
+        "rank": "",
+        "browseAgent": "FRANKLIN  BENJAMIN  18121878",
+        "more": {
+          "nonlatinLabels": [],
+          "vernacularLabels": [],
+          "rdftypes": [
+            "PersonalName",
+            "SimpleType",
+            "Name",
+            "Authority"
+          ],
+          "collections": [
+            "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings",
+            "http://id.loc.gov/authorities/names/collection_LCNAF"
+          ],
+          "genres": [],
+          "variantLabels": [],
+          "languages": [],
+          "relateds": [],
+          "occupations": [],
+          "activityfields": [],
+          "sources": [
+            "found : His Biographical sketch and writings of Elder Benjamin Franklin [MI] 1881: p. 12 (b. April 1, 1812) p. 49 (d. October 22, 1878)"
+          ],
+          "locales": [],
+          "birthplaces": [],
+          "birthdates": [],
+          "deathdates": [],
+          "lcclasss": [],
+          "lcclasses": [],
+          "hasRelatedAuthoritys": [],
+          "broaders": [],
+          "sees": [],
+          "hasEarlierEstablishedForms": [],
+          "hasLaterEstablishedForms": [],
+          "useFors": [],
+          "marcKeys": [
+            "10010$aFranklin, Benjamin,$d1812-1878"
+          ],
+          "gacs": []
+        }
+      },
+      {
+        "suggestLabel": "Franklin, Benjamin, 1706-1790 A Benjamin Franklin reader",
+        "uri": "http://id.loc.gov/resources/instances/9274546",
+        "aLabel": "Franklin, Benjamin, 1706-1790 A Benjamin Franklin reader",
+        "vLabel": "",
+        "sLabel": "",
+        "code": "",
+        "token": "9274546",
+        "rank": "",
+        "more": {
+          "varianttitles": [],
+          "rdftypes": [
+            "Instance"
+          ],
+          "collections": [],
+          "genres": [],
+          "contenttypes": [],
+          "languages": [],
+          "identifiers": [
+            "45010550"
+          ],
+          "notes": [
+            "illus. (incl. facsims.) diagrs.",
+            "040 $aDLC$cFJ$dOCoLC$dDLC"
+          ],
+          "subjects": []
+        }
+      },
+      {
+        "suggestLabel": "Franklin, Benjamin, 1706-1790 A Benjamin Franklin reader",
+        "uri": "http://id.loc.gov/resources/instances/13304062",
+        "aLabel": "Franklin, Benjamin, 1706-1790 A Benjamin Franklin reader",
+        "vLabel": "",
+        "sLabel": "",
+        "code": "",
+        "token": "13304062",
+        "rank": "",
+        "more": {
+          "varianttitles": [],
+          "rdftypes": [
+            "Instance"
+          ],
+          "collections": [],
+          "genres": [],
+          "contenttypes": [],
+          "languages": [],
+          "identifiers": [
+            "2003055788"
+          ],
+          "notes": [
+            "ill.",
+            "\"The Autobiography, plus : Poor Richard's almanac, Silence Dogood's letters, Polly Baker's trial, bagatelles to his French girlfriends, the closing speech at the Constitutional Convention, letters to Jefferson and Adams and Washington, and other wonderful writings from America's favorite founder.\"",
+            "Contributor biographical information",
+            "Publisher description"
+          ],
+          "subjects": []
+        }
+      },
+      {
+        "suggestLabel": "Franklin, Benjamin, 1706-1790 A Benjamin Franklin reader",
+        "uri": "http://id.loc.gov/resources/works/9274546",
+        "aLabel": "Franklin, Benjamin, 1706-1790 A Benjamin Franklin reader",
+        "vLabel": "",
+        "sLabel": "",
+        "code": "",
+        "token": "9274546",
+        "rank": "",
+        "more": {
+          "aaps": [
+            "Franklin, Benjamin, 1706-1790 A Benjamin Franklin reader"
+          ],
+          "varianttitles": [],
+          "contributors": [
+            "Franklin, Benjamin, 1706-1790",
+            "Goodman, Nathan G. (Nathan Gerson), 1899-1953"
+          ],
+          "rdftypes": [
+            "Work",
+            "Text",
+            "Monograph"
+          ],
+          "collections": [],
+          "genres": [],
+          "contenttypes": [],
+          "languages": [
+            "English"
+          ],
+          "lcc": "",
+          "subjects": [],
+          "instance": "http://id.loc.gov/resources/instances/9274546"
+        }
+      },
+      {
+        "suggestLabel": "Franklin, Benjamin, 1706-1790 A bird in the hand",
+        "uri": "http://id.loc.gov/resources/instances/8837120",
+        "aLabel": "Franklin, Benjamin, 1706-1790 A bird in the hand",
+        "vLabel": "",
+        "sLabel": "",
+        "code": "",
+        "token": "8837120",
+        "rank": "",
+        "more": {
+          "varianttitles": [],
+          "rdftypes": [
+            "Instance"
+          ],
+          "collections": [],
+          "genres": [],
+          "contenttypes": [],
+          "languages": [],
+          "identifiers": [
+            "51008266"
+          ],
+          "notes": [
+            "ill. (some col.)",
+            "040 $aDLC$cCarP$dDLC"
+          ],
+          "subjects": []
+        }
+      },
+      {
+        "suggestLabel": "Franklin, Benjamin, 1706-1790 A catalogue of choice and valuable books",
+        "uri": "http://id.loc.gov/resources/works/9289243",
+        "aLabel": "Franklin, Benjamin, 1706-1790 A catalogue of choice and valuable books",
+        "vLabel": "",
+        "sLabel": "",
+        "code": "",
+        "token": "9289243",
+        "rank": "",
+        "more": {
+          "aaps": [
+            "Franklin, Benjamin, 1706-1790 A catalogue of choice and valuable books"
+          ],
+          "varianttitles": [],
+          "contributors": [
+            "Franklin, Benjamin, 1706-1790",
+            "Van Doren, Carl, 1885-1950",
+            "Meriden Gravure Company"
+          ],
+          "rdftypes": [
+            "Work",
+            "Text",
+            "Monograph"
+          ],
+          "collections": [],
+          "genres": [
+            "Catalogs",
+            "Biographies"
+          ],
+          "contenttypes": [],
+          "languages": [
+            "English"
+          ],
+          "lcc": "",
+          "subjects": [],
+          "instance": "http://id.loc.gov/resources/instances/9289243"
+        }
+      }
+    ]
+  }
