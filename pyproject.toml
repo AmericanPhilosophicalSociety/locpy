@@ -1,7 +1,12 @@
 [project]
 name = "locpy"
 version = "0.1.0"
-description = "Add your description here"
+description = "Python module for interacting with Library of Congress Linked Data Service and API endpoint"
+authors = [
+    {name = "Center for Digital Scholarship at the American Philosophical Society", email = "cds@amphilsoc.org"},
+    {name = "David Ragnar Nelson", email = "drnelson6@gmail.com"} 
+]
+license = {text = "Apache-2"}
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -17,6 +22,7 @@ build-backend = "hatchling.build"
 [dependency-groups]
 dev = [
     "pytest>=8.4.1",
+    "pytest-cov>=6.2.1",
     "ruff>=0.12.7",
 ]
 

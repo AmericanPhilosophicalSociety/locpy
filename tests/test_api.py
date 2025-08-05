@@ -6,7 +6,7 @@ from unittest.mock import patch, Mock
 import requests
 import rdflib
 
-from locpy.api import LocAPI, SRUItem, LocEntity, NameEntity, SubjectEntity
+from locpy.api import LocAPI, SRUItem, LocEntity, NameEntity, SubjectEntity, SRUResult
 
 
 FIXTURES_PATH = os.path.join(os.path.dirname(__file__), 'fixtures')
@@ -96,6 +96,7 @@ class TestLocAPI(object):
     # features to test for search results:
     # constructs URLs correctly for differing authorities
     # returns empty list with no results
+
     @patch('locpy.api.requests')
     def test_suggest(self, mockrequests):
         loc = LocAPI()
@@ -119,37 +120,21 @@ class TestLocAPI(object):
         )
 
         # test suggest results
+        # this test also checks that authorities are passed correctly
         sru_fixture = os.path.join(FIXTURES_PATH, 'sru_suggest.json')
         with open(sru_fixture, encoding='utf-8') as srufile:
             mock_result = json.load(srufile)
         mockrequests.get.return_value.json.return_value = mock_result
-        results = loc.suggest('Franklin, Benjamin')
+        results = loc.suggest('Franklin, Benjamin', 'names')
         assert isinstance(results, list)
         assert isinstance(results[0], SRUItem)
         mockrequests.get.assert_called_with(
-            'http://id.loc.gov/suggest2', params={'q': 'Franklin, Benjamin'}
+            'http://id.loc.gov/authorities/names/suggest2', params={'q': 'Franklin, Benjamin'}
         )
 
         # bad status code should return empty list
         mockrequests.get.return_value.status_code = requests.codes.forbidden
         assert loc.suggest('test') == []
-
-    # not sure about these next two tests - what good do they serve?
-    def test_suggest_names(self):
-        loc = LocAPI()
-        term = 'Franklin, Benjamin'
-        with patch.object(loc, 'suggest') as mocksuggest:
-            loc.suggest(term, authority='names')
-
-        mocksuggest.assert_called_with('Franklin, Benjamin', authority='names')
-
-    def test_suggest_subjects(self):
-        loc = LocAPI()
-        term = 'Franklin, Benjamin'
-        with patch.object(loc, 'suggest') as mocksuggest:
-            loc.suggest(term, authority='subjects')
-
-        mocksuggest.assert_called_with('Franklin, Benjamin', authority='subjects')
 
     @patch('locpy.api.requests')
     def test_search(self, mockrequests):
@@ -190,23 +175,6 @@ class TestLocAPI(object):
         # bad status code should return empty list
         mockrequests.get.return_value.status_code = requests.codes.forbidden
         assert loc.search('test', 'names') == []
-
-    # not sure about these next two tests - what good do they serve?
-    def test_search_names(self):
-        loc = LocAPI()
-        term = 'Benjamin Franklin'
-        with patch.object(loc, 'search') as mocksearch:
-            loc.search(term, authority='names')
-
-        mocksearch.assert_called_with('Benjamin Franklin', authority='names')
-
-    def test_search_subjects(self):
-        loc = LocAPI()
-        term = 'Benjamin Franklin'
-        with patch.object(loc, 'search') as mocksearch:
-            loc.search(term, authority='subjects')
-
-        mocksearch.assert_called_with('Benjamin Franklin', authority='subjects')
 
 
 class TestLocEntity(object):
@@ -292,6 +260,8 @@ class TestNameEntity(object):
 
         # patch fixture in to NameEntity rdf property
         with patch.object(NameEntity, 'rdf', new=test_rdf):
+            # test label to test when language is None
+            assert str(ent.authoritative_label) == 'Franklin, Benjamin, 1706-1790'
             assert str(ent.birthdate) == '1706-01-17'
             assert str(ent.deathdate) == '1790-04-17'
             assert ent.birthyear == 1706
@@ -334,3 +304,24 @@ class TestSubjectEntity(object):
 
         with patch.object(SubjectEntity, 'rdf', new=test_rdf):
             assert ent.components is None
+
+
+def test_sru_result():
+    sru_fixture = os.path.join(FIXTURES_PATH, 'sru_search.json')
+    with open(sru_fixture, encoding='utf-8') as srufile:
+        sru_data = json.load(srufile)
+    sru_res = SRUResult(sru_data)
+    assert sru_res.total_results == 10
+    assert isinstance(sru_res.records, list)
+    assert isinstance(sru_res.records[0], SRUItem)
+    assert len(sru_res.records) == 10
+
+
+def test_sru_item():
+    sru_fixture = os.path.join(FIXTURES_PATH, 'sru_search.json')
+    with open(sru_fixture, encoding='utf-8') as srufile:
+        sru_data = json.load(srufile)
+    sru_item = SRUResult(sru_data).records[0]
+    assert sru_item.uri == 'http://id.loc.gov/authorities/names/nr91002273'
+    assert sru_item.loc_id == 'nr91002273'
+    assert sru_item.label == 'Joslin, Benjamin F. (Benjamin Franklin), 1796-1861'

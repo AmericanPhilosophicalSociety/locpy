@@ -147,6 +147,7 @@ class LocAPI(object):
             return identifier
 
         else:
+            # TODO: Not covered by test suite. Implement test
             response.raise_for_status()
 
 
@@ -306,6 +307,7 @@ class SubjectEntity(LocEntity):
                     components.append(entity)
                 else:
                     # TODO: implement logger for this
+                    # Not covered by test suite. Is there even a known case that triggers this?
                     print('Unrecognized schema')
             return components
         else:
@@ -341,7 +343,7 @@ class SRUItem(object):
         return self._data['uri']
 
     @property
-    def id(self):
+    def loc_id(self):
         """LoC ID string for this result"""
         return self._data['token']
 
