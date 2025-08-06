@@ -7,6 +7,11 @@ import rdflib
 import requests
 from rdflib.namespace import RDF
 
+import logging
+
+
+logger = logging.getLogger(__name__)
+
 
 MADS_NS = Namespace('http://www.loc.gov/mads/rdf/v1#')
 
@@ -95,7 +100,6 @@ class LocAPI(object):
         suggest_param = 'suggest2'
 
         query_url = urljoin(base_url, suggest_param)
-        print(query_url)
         # TODO: incorporate more parameters?
         params = {'q': query}
         response = requests.get(query_url, params=params)
@@ -167,6 +171,9 @@ class LocEntity(object):
     @property
     def uriref(self):
         """LoC URI reference as instance of :class: `rdflib.URIRef`"""
+        # Consider deprecating this - unless the instance can't be matched to a LoC
+        # dataset, this is generally only used in HTTP requests, which should also
+        # resolve with the dataset URI
         return rdflib.URIRef(self.uri)
 
     @property
@@ -191,9 +198,7 @@ class LocEntity(object):
         labels = self.rdf.objects(self.dataset_uriref, MADS_NS.authoritativeLabel)
         # Sometimes label is marked "en", sometimes no label
         for label in labels:
-            if label.language == 'en':
-                return label
-            elif label.language is None:
+            if label.language == 'en' or label.language is None:
                 return label
 
     @property
@@ -290,25 +295,30 @@ class SubjectEntity(LocEntity):
 
         Currently does not support temporal elements.
         """
-        complex = MADS_NS.ComplexSubject
-        if complex in self.instance_of:
-            topics = self.rdf.subjects(RDF.type, MADS_NS.Topic)
-            geographic = self.rdf.subjects(RDF.type, MADS_NS.Geographic)
-            genres = self.rdf.subjects(RDF.type, MADS_NS.GenreForm)
-            all_components = list(topics) + list(geographic) + list(genres)
-            uris = [c.split('/')[-1] for c in all_components]
-            components = []
-            for u in uris:
-                if u.startswith('n'):
-                    entity = NameEntity(u)
+        # container list for results
+        components = []
+        # get blank node that identifies collectionList
+        c_bnode = self.rdf.value(self.dataset_uriref, MADS_NS.componentList)
+        # get rdflib.collection.Collection representing components
+        components_rdf = rdflib.collection.Collection(self.rdf, c_bnode)
+        for c in components_rdf:
+            if isinstance(c, rdflib.URIRef):
+                uri = c.split('/')[-1]
+                if uri.startswith('n'):
+                    entity = NameEntity(uri)
                     components.append(entity)
-                elif u.startswith('sh'):
-                    entity = SubjectEntity(u)
+                elif uri.startswith('sh'):
+                    entity = SubjectEntity(uri)
                     components.append(entity)
                 else:
-                    # TODO: implement logger for this
-                    # Not covered by test suite. Is there even a known case that triggers this?
-                    print('Unrecognized schema')
+                    # Not covered by test suite
+                    logger.warning(f'Unrecognized schema for URI: {c}')
+            else:
+                # Not covered by test suite
+                temp_label = self.rdf.value(c, MADS_NS.authoritativeLabel)
+                components.append(temp_label)
+
+        if len(components) > 0:
             return components
         else:
             return None

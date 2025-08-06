@@ -217,7 +217,6 @@ class TestLocEntity(object):
         mockrdflib.Graph.return_value.parse.assert_called_with(
             data=mock_response.text, format='xml'
         )
-        mockrequests.raise_for_status.assert_called_once
 
     def test_properties(self):
         ent = LocEntity(self.test_id)
