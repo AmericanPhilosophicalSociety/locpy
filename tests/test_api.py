@@ -129,7 +129,8 @@ class TestLocAPI(object):
         assert isinstance(results, list)
         assert isinstance(results[0], SRUItem)
         mockrequests.get.assert_called_with(
-            'http://id.loc.gov/authorities/names/suggest2', params={'q': 'Franklin, Benjamin'}
+            'http://id.loc.gov/authorities/names/suggest2',
+            params={'q': 'Franklin, Benjamin'},
         )
 
         # bad status code should return empty list
