@@ -8,7 +8,7 @@ authors = [
 ]
 license = {text = "Apache-2"}
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
     "cached-property>=2.0.1",
     "rdflib>=7.1.4",
