@@ -186,7 +186,11 @@ class LocEntity(object):
     def rdf(self):
         """LoC data for this entity as :class: `rdflib.Graph`"""
         graph = rdflib.Graph()
-        response = requests.get(self.uri, headers={'Accept': 'application/rdf+xml'})
+        # try to query dataset URI first if it exists - sometimes plain URI throws an error
+        if self.dataset_uri:
+            response = requests.get(self.dataset_uri, headers={'Accept': 'application/rdf+xml'})
+        else:
+            response = requests.get(self.uri, headers={'Accept': 'application/rdf+xml'})
         response.raise_for_status()  # raise HTTPError on bad requests
         graph.parse(data=response.text, format='xml')
 

@@ -213,7 +213,7 @@ class TestLocEntity(object):
         assert ent.rdf == mockrdflib.Graph.return_value
         mockrdflib.Graph.assert_called_with()
         mockrequests.get.assert_called_with(
-            self.test_uri, headers={'Accept': 'application/rdf+xml'}
+            self.test_data_uri, headers={'Accept': 'application/rdf+xml'}
         )
         mockrdflib.Graph.return_value.parse.assert_called_with(
             data=mock_response.text, format='xml'
