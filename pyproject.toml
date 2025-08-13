@@ -1,0 +1,30 @@
+[project]
+name = "locpy"
+version = "0.1.0"
+description = "Python module for interacting with Library of Congress Linked Data Service and API endpoint"
+authors = [
+    {name = "Center for Digital Scholarship at the American Philosophical Society", email = "cds@amphilsoc.org"},
+    {name = "David Ragnar Nelson", email = "drnelson6@gmail.com"} 
+]
+license = {text = "Apache-2"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "cached-property>=2.0.1",
+    "rdflib>=7.1.4",
+    "requests>=2.32.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-cov>=6.2.1",
+    "ruff>=0.12.7",
+]
+
+[tool.ruff.format]
+quote-style = "single"

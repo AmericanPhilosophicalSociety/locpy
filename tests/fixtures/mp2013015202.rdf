@@ -1,0 +1,110 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015202" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:authoritativeLabel xml:lang="en">dancer</madsrdf:authoritativeLabel>
+    <madsrdf:elementList rdf:parseType="Collection">
+      <madsrdf:MediumElement>
+	<madsrdf:elementValue xml:lang="en">dancer</madsrdf:elementValue>
+      </madsrdf:MediumElement>
+    </madsrdf:elementList>
+    <bflc:marcKey>162  $adancer</bflc:marcKey>
+    <madsrdf:note>A dancer who is explicitly required by the composer for the performance of a musical work.</madsrdf:note>
+    <identifiers:lccn xmlns:identifiers="http://id.loc.gov/vocabulary/identifiers/">mp2013015202</identifiers:lccn>
+    <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/performanceMediums"/>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/performanceMediums/collection_LCMPT_General"/>
+    <madsrdf:hasBroaderAuthority>
+      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015545">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	<madsrdf:authoritativeLabel xml:lang="en">performer</madsrdf:authoritativeLabel>
+      </madsrdf:Medium>
+    </madsrdf:hasBroaderAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015713">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	<madsrdf:authoritativeLabel xml:lang="en">tap dancer</madsrdf:authoritativeLabel>
+      </madsrdf:Medium>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1986-02-11T00:00:00</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new</ri:recordStatus>
+	<ri:recordContentSource>
+	  <madsrdf:CorporateName rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel>United States, Library of Congress</madsrdf:authoritativeLabel>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</madsrdf:code>
+	  </madsrdf:CorporateName>
+	</ri:recordContentSource>
+	<ri:languageOfCataloging>
+	  <madsrdf:Language rdf:about="http://id.loc.gov/vocabulary/iso639-2/eng">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/iso639-2/iso639-2_Language"/>
+	    <madsrdf:authoritativeLabel xml:lang="en">English</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="fr">anglais</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="de">Englisch</madsrdf:authoritativeLabel>
+	    <madsrdf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</madsrdf:code>
+	  </madsrdf:Language>
+	</ri:languageOfCataloging>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-02-24T11:34:54</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revised</ri:recordStatus>
+	<ri:recordContentSource>
+	  <madsrdf:CorporateName rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel>United States, Library of Congress</madsrdf:authoritativeLabel>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</madsrdf:code>
+	    <madsrdf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</madsrdf:code>
+	  </madsrdf:CorporateName>
+	</ri:recordContentSource>
+	<ri:languageOfCataloging>
+	  <madsrdf:Language rdf:about="http://id.loc.gov/vocabulary/iso639-2/eng">
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/iso639-2/iso639-2_Language"/>
+	    <madsrdf:authoritativeLabel xml:lang="en">English</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="fr">anglais</madsrdf:authoritativeLabel>
+	    <madsrdf:authoritativeLabel xml:lang="de">Englisch</madsrdf:authoritativeLabel>
+	    <madsrdf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</madsrdf:code>
+	  </madsrdf:Language>
+	</ri:languageOfCataloging>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">dancer</skos:prefLabel>
+    <skos:broader>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015545">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">performer</skos:prefLabel>
+      </rdf:Description>
+    </skos:broader>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015713">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">tap dancer</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:note>A dancer who is explicitly required by the composer for the performance of a musical work.</skos:note>
+    <skos:inScheme rdf:resource="http://id.loc.gov/authorities/performanceMediums"/>
+    <skos:changeNote>
+      <cs:ChangeSet xmlns:cs="http://purl.org/vocab/changeset/schema#">
+	<cs:subjectOfChange rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015202"/>
+	<cs:creatorName>United States, Library of CongressDLCdlcUS-dlc</cs:creatorName>
+	<cs:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1986-02-11T00:00:00</cs:createdDate>
+	<cs:changeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new</cs:changeReason>
+      </cs:ChangeSet>
+    </skos:changeNote>
+    <skos:changeNote>
+      <cs:ChangeSet xmlns:cs="http://purl.org/vocab/changeset/schema#">
+	<cs:subjectOfChange rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015202"/>
+	<cs:creatorName>United States, Library of CongressDLCdlcUS-dlc</cs:creatorName>
+	<cs:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-02-24T11:34:54</cs:createdDate>
+	<cs:changeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revised</cs:changeReason>
+      </cs:ChangeSet>
+    </skos:changeNote>
+  </madsrdf:Medium>
+</rdf:RDF>
