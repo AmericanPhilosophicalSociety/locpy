@@ -21,9 +21,11 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
+    "furo>=2025.7.19",
     "pytest>=8.4.1",
     "pytest-cov>=6.2.1",
     "ruff>=0.12.7",
+    "sphinx>=8.2.3",
 ]
 
 [tool.ruff.format]

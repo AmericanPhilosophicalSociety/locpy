@@ -40,7 +40,7 @@ Clone the repo, then in the base directory, run:
 >>>
 >>> from locpy.api import LocAPI
 >>> LocAPI.uri_from_id('n79043402')
-'http://id.loc.gov/authorities/n79034903'
+'http://id.loc.gov/authorities/n79043402'
 
 >>>
 >>> LocAPI.dataset_uri_from_id('n79043402')
