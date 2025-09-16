@@ -27,7 +27,7 @@ jobs:
           pip install .
           pip install '.[test']
       - name: Run pytest
-        run: pytest --cov= --cov-report=xml
+        run: pytest --cov=locpy --cov-report=xml
       - name: Upload test coverage to Codecov
         uses: codecov/codecov-action@v3
           
