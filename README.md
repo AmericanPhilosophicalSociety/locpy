@@ -1,5 +1,7 @@
 # locpy
 
+[![unit tests](https://github.com/AmericanPhilosophicalSociety/locpy/actions/workflows/run-tests.yml/badge.svg)](https://github.com/AmericanPhilosophicalSociety/locpy/actions/workflows/run-tests.yml)
+
 Python library for querying and representing LoC ID APIs. The library provides connectors for the Library of Congress Linked Data Authority.
 
 locpy uses the python library rdflib to query Library of Congress entities and represent them as python classes.
