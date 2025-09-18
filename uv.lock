@@ -1,6 +1,7 @@
 version = 1
 revision = 1
 requires-python = ">=3.11"
+<<<<<<< HEAD
 
 [[package]]
 name = "accessible-pygments"
@@ -53,6 +54,8 @@ sdist = { url = "https://files.pythonhosted.org/packages/76/4b/3d870836119dbe9a5
 wheels = [
     { url = "https://files.pythonhosted.org/packages/11/0e/7d8225aab3bc1a0f5811f8e1b557aa034ac04bdf641925b30d3caf586b28/cached_property-2.0.1-py3-none-any.whl", hash = "sha256:f617d70ab1100b7bcf6e42228f9ddcb78c676ffa167278d9f730d1c2fba69ccb", size = 7428 },
 ]
+=======
+>>>>>>> main
 
 [[package]]
 name = "certifi"
@@ -200,6 +203,7 @@ toml = [
     { name = "tomli", marker = "python_full_version <= '3.11'" },
 ]
 
+<<<<<<< HEAD
 [[package]]
 name = "docutils"
 version = "0.21.2"
@@ -225,6 +229,8 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/3a/34/2b07b72bee02a63241d654f5d8af87a2de977c59638eec41ca356ab915cd/furo-2025.7.19-py3-none-any.whl", hash = "sha256:bdea869822dfd2b494ea84c0973937e35d1575af088b6721a29c7f7878adc9e3", size = 342175 },
 ]
 
+=======
+>>>>>>> main
 [[package]]
 name = "idna"
 version = "3.10"
@@ -269,7 +275,6 @@ name = "locpy"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "cached-property" },
     { name = "rdflib" },
     { name = "requests" },
 ]
@@ -285,7 +290,6 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "cached-property", specifier = ">=2.0.1" },
     { name = "rdflib", specifier = ">=7.1.4" },
     { name = "requests", specifier = ">=2.32.4" },
 ]
@@ -475,6 +479,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "snowballstemmer"
 version = "3.0.1"
 source = { registry = "https://pypi.org/simple" }
@@ -587,6 +592,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> main
 name = "tomli"
 version = "2.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -626,6 +633,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "typing-extensions"
 version = "4.15.0"
 source = { registry = "https://pypi.org/simple" }
@@ -635,6 +643,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> main
 name = "urllib3"
 version = "2.5.0"
 source = { registry = "https://pypi.org/simple" }
