@@ -42,7 +42,7 @@ Clone the repo, then in the base directory, run:
 >>>
 >>> from locpy.api import LocAPI
 >>> LocAPI.uri_from_id('n79043402')
-'http://id.loc.gov/authorities/n79034903'
+'http://id.loc.gov/authorities/n79043402'
 
 >>>
 >>> LocAPI.dataset_uri_from_id('n79043402')
@@ -111,7 +111,18 @@ rdflib.term.Literal('German literature--Germany (East)', lang='en') # inherits a
 ## Running tests
 
 Install development requirements  
-```$ pip install -e ".[dev]"```
+```$ pip install . --group dev```
 
 Run tests with pytest  
 ```$ python -m pytest```  
+
+## Build documentation
+
+Install development requirements
+```$ pip install . --group dev```
+
+Run doctest to make sure the code examples work
+```$ make -C docs doctest```
+
+Build documentation with Sphinx
+```$ sphinx-build ./docs/source ./docs/build```

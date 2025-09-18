@@ -170,7 +170,7 @@ class LocEntity(object):
 
     @property
     def uriref(self):
-        """LoC URI reference as instance of :class: `rdflib.URIRef`"""
+        """LoC URI reference as instance of :class:`rdflib.URIRef`"""
         # Consider deprecating this - unless the instance can't be matched to a LoC
         # dataset, this is generally only used in HTTP requests, which should also
         # resolve with the dataset URI
@@ -179,12 +179,12 @@ class LocEntity(object):
     @property
     def dataset_uriref(self):
         """LoC URI reference that includes LCNAF dataset
-        marker as instance of :class: `rdflib.URIRef`"""
+        marker as instance of :class:`rdflib.URIRef`"""
         return rdflib.URIRef(self.dataset_uri)
 
     @cached_property
     def rdf(self):
-        """LoC data for this entity as :class: `rdflib.Graph`"""
+        """LoC data for this entity as :class:`rdflib.Graph`"""
         graph = rdflib.Graph()
         # try to query dataset URI first if it exists - sometimes plain URI throws an error
         if self.dataset_uri:
@@ -208,21 +208,21 @@ class LocEntity(object):
     @property
     def scheme_membership(self):
         """LoC scheme that represents this entity as instance of
-        :class: `rdflib.URIRef"""
+        :class:`rdflib.URIRef`"""
         # TODO: In theory, this can value can be multiple. Find example
         return self.rdf.value(self.dataset_uriref, MADS_NS.isMemberOfMADSScheme)
 
     @property
     def instance_of(self):
         """Linked Data authorities that describe this entity as
-        list of instances of :class: `rdflib.URIRef"""
+        list of instances of :class:`rdflib.URIRef`"""
         instances = self.rdf.objects(self.dataset_uriref, RDF.type)
         return [i for i in instances]
 
 
 class NameEntity(LocEntity):
     """Object to represent single entity from the
-    LoC Name Authority File. Inherits :class: `LocEntity`.
+    LoC Name Authority File. Inherits :class:`LocEntity`.
 
     :param loc_id: LoC identifier (string)
     """
@@ -234,7 +234,7 @@ class NameEntity(LocEntity):
     @property
     def rwo_uriref(self):
         """LoC RWO URI reference as instance of
-        :class: `rdflib.URIRef`"""
+        :class:`rdflib.URIRef`"""
         return rdflib.URIRef(self.rwo_uri)
 
     # chronological data
@@ -242,23 +242,23 @@ class NameEntity(LocEntity):
     # should be implemented in future work package
     @property
     def birthdate(self):
-        """MADS birthday as :class: `rdflib.term.Literal`"""
+        """MADS birthday as :class:`rdflib.term.Literal`"""
         return self.rdf.value(self.rwo_uriref, MADS_NS.birthDate)
 
     @property
     def deathdate(self):
-        """MADS deathdate as :class: `rdflib.term.Literal`"""
+        """MADS deathdate as :class:`rdflib.term.Literal`"""
         return self.rdf.value(self.rwo_uriref, MADS_NS.deathDate)
 
     @property
     def birthyear(self):
-        """birth year as int"""
+        """birth year as `int`"""
         if self.birthdate:
             return self.year_from_edtf(str(self.birthdate))
 
     @property
     def deathyear(self):
-        """death year as int"""
+        """death year as `int`"""
         if self.deathdate:
             return self.year_from_edtf(str(self.deathdate))
 
@@ -285,7 +285,7 @@ class NameEntity(LocEntity):
 
 class SubjectEntity(LocEntity):
     """Object to represent single entity from the LoC
-    Subject Headings authority. Inherits :class: `LocEntity`.
+    Subject Headings authority. Inherits :class:`LocEntity`.
 
     :param loc_id: LoC identifier (string)
     """
@@ -293,8 +293,8 @@ class SubjectEntity(LocEntity):
     @property
     def components(self):
         """Components for LoC Complex subjects. If subject is
-        complex, returns a list of :class: `SubjectEntity`
-        and :class: `NameEntity` objects. If subject is simple,
+        complex, returns a list of :class:`SubjectEntity`
+        and :class:`NameEntity` objects. If subject is simple,
         returns `None`.
 
         Currently does not support temporal elements.
@@ -329,7 +329,7 @@ class SubjectEntity(LocEntity):
 
 
 class SRUResult(object):
-    """SRU search result object, for use with :meth: `LocAPI.search`."""
+    """SRU search result object, for use with :meth:`LocAPI.search`."""
 
     def __init__(self, data):
         self._results = data.get('hits', [])
@@ -339,13 +339,13 @@ class SRUResult(object):
 
     @cached_property
     def records(self):
-        """List of results as :class: `SRUItem`."""
+        """List of results as :class:`SRUItem`."""
         return [SRUItem(r) for r in self._results]
 
 
 class SRUItem(object):
     """Single item returned by a SRU search, for use with
-    :meth: `LocAPI.search` and :class: `SRUResult`.
+    :meth:`LocAPI.search` and :class:`SRUResult`.
     """
 
     def __init__(self, data):
